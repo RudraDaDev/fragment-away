@@ -133,6 +133,8 @@ Mara's phone is a major storytelling device and a practical way to deliver intim
 
 Voice notes are especially important: they create a believable channel for Ethan's fascination with Mara's voice and can later make earlier interactions feel different. The phone should support discovery and recontextualization, not simply dump exposition. The final screen layout, timing, and exact feature set remain open.
 
+**Implementation direction:** The game will use Phaser for the 2D world and interactive scenes. Phone, message, dialogue, or settings interfaces may use HTML and CSS overlays if that improves layout, text scaling, or accessibility. Keep those overlays optional and visually consistent with the game. The exact UI architecture is not decided.
+
 ## 8. Environmental storytelling
 
 Locations should tell the player things that dialogue does not. Ethan's environment, for example, can first reinforce his public image through awards, guitars, albums, tour posters, newspaper articles, fan letters, photographs, and recording equipment. Smaller details can gradually sit uneasily beside that polished image.
@@ -313,7 +315,7 @@ A prequel is a possibility, not a current requirement. It could explore Mara's l
 
 *Fragment Away* is a **cinematic 2D narrative drama**. It is distinct from **SmallHours**, described as a procedural narrative life-sim; do not merge their format or creative identity.
 
-Current scope is limited to the concept above. Morrow is named, but its region, layout, and landmarks are undecided, as is the place Mara reaches in Episode 2. Engine, target platform, the best friend's name, final chapter details, implementation approach, soundtrack production, and ending logic are also undecided. Build those choices around the identity theme, subtle psychological suspense, and Mara's agency.
+Current scope is limited to the concept above. **Phaser is the chosen framework** for the 2D game. HTML and CSS overlays may be used for phone, dialogue, or settings UI when useful; Phaser version, JavaScript or TypeScript, build tooling, and exact UI architecture remain open. Morrow is named, but its region, layout, and landmarks are undecided, as is the place Mara reaches in Episode 2. The target platform, the best friend's name, final chapter details, soundtrack production, and ending logic are also undecided. Build those choices around the identity theme, subtle psychological suspense, and Mara's agency.
 
 ## 16. Creative pillars to protect
 

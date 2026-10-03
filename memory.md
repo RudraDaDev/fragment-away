@@ -34,6 +34,7 @@
 
 ## Experience and craft
 
+- **Framework:** Phaser is chosen for the game. HTML and CSS DOM overlays are optional for phone, dialogue, or settings UI when they improve readability or accessibility. Version, JavaScript or TypeScript, build tooling, and the exact division between Phaser UI and DOM overlays remain undecided.
 - Target balance is approximately 70% narrative / 30% gameplay. It should include a small explorable 2D world, dialogue and choices, relationships, object interaction, investigation, revisiting locations, and consequences, not be a pure visual novel.
 - Mara's phone supports messages, voice notes, contacts, photos, conversations, notifications, and possibly browser/social-style information. Voice notes are especially important.
 - Visual direction: illustrated/hand-drawn 2D, stylized realistic proportions, muted and atmospheric, cinematic but not hyper-realistic, pixel-art-dependent, anime, or over-detailed.
@@ -53,7 +54,7 @@
 - Ethan's backstory and the precise progression/mechanics of his manipulation.
 - Investigation sequence after the disappearance and how the kidnapping is discovered.
 - Final choice/ending set and how branching is tracked. Candidate themes include self-definition, bittersweet freedom, reconnection, repeating learned behavior, ambiguity, and identity-shaped outcomes. Do not reduce endings to a good/bad morality score.
-- Game engine, platform, controls, scope, production schedule, and implementation details.
+- Phaser version, JavaScript or TypeScript, build tooling, target platform, controls, scope, production schedule, and UI architecture, including where HTML/CSS overlays are useful.
 - Exact camera orientation for the noted low “Southeast/ground-to-head” cinematic angle.
 - Whether to make the possible prequel *Before Away*; it is not required for the main game.
 
@@ -63,4 +64,4 @@
 2. Name the best friend and define their personality and friendship with Mara beyond the later disappearance.
 3. Build Episode 4's fair clue trail and decide how the kidnapping is uncovered without a single missable clue.
 4. Decide what player-choice patterns meaningfully shape Mara, then design ending conditions without a simple morality meter.
-5. Choose engine/platform and plan a small 2D exploration plus phone-interaction prototype.
+5. Choose Phaser version and JavaScript or TypeScript, decide where optional HTML/CSS overlays help, then prototype a small 2D exploration and phone interaction.

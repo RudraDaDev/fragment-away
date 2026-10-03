@@ -47,6 +47,8 @@
 - **PHONE:** An on-screen phone interaction or notification.
 - **VISUAL / SOUND:** Direction for framing, animation, ambience, and music.
 
+**Implementation note:** The game will be built in Phaser. Keep world movement, cameras, and environmental interactions in Phaser. Phone or dialogue panels can use HTML and CSS overlays if that is useful for responsive layout or readable text. The UI architecture is still open.
+
 ## Episode 1 cutscenes
 
 Episode 1 has three key cinematic scenes. They are included in the runtime estimates above. Regular exploration stays lightly animated, so these moments can receive more detailed staging without requiring full animation throughout the episode.
