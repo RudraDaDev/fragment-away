@@ -36,6 +36,7 @@
 
 - **Framework:** Phaser is chosen for the game. HTML and CSS DOM overlays are optional for phone, dialogue, or settings UI when they improve readability or accessibility. Version, JavaScript or TypeScript, build tooling, and the exact division between Phaser UI and DOM overlays remain undecided.
 - **Gameplay visual style proposal:** hand-drawn 2D side-on walk-and-interact, mostly fixed camera indoors and short scrolling streets, with no 3D, combat, jumping, or platforming. This is a recommendation for the beginner-friendly prototype, not yet user-approved.
+- `episode-1-art-list.md` is the Episode 1 drawing checklist. It recommends seven reusable backgrounds, simple character poses, and three cutscene illustrations. Draw the bedroom first and test it with placeholders before polishing.
 - Target balance is approximately 70% narrative / 30% gameplay. It should include a small explorable 2D world, dialogue and choices, relationships, object interaction, investigation, revisiting locations, and consequences, not be a pure visual novel.
 - Mara's phone supports messages, voice notes, contacts, photos, conversations, notifications, and possibly browser/social-style information. Voice notes are especially important.
 - Visual direction: illustrated/hand-drawn 2D, stylized realistic proportions, muted and atmospheric, cinematic but not hyper-realistic, pixel-art-dependent, anime, or over-detailed.
@@ -66,4 +67,4 @@
 2. Name the best friend and define their personality and friendship with Mara beyond the later disappearance.
 3. Build Episode 4's fair clue trail and decide how the kidnapping is uncovered without a single missable clue.
 4. Decide what player-choice patterns meaningfully shape Mara, then design ending conditions without a simple morality meter.
-5. Confirm the side-on gameplay proposal, then choose Phaser version and JavaScript or TypeScript and prototype one room with movement, hotspots, dialogue, and a phone overlay.
+5. Confirm the side-on gameplay proposal, choose Phaser version and JavaScript or TypeScript, then graybox Mara's bedroom using `episode-1-art-list.md` and prototype movement, hotspots, dialogue, and a phone overlay.

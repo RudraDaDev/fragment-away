@@ -161,6 +161,8 @@ Use inspectable objects, repeated locations, altered details, and visual contrad
 
 Fragmentation should be intentional and legible. Avoid relying on generic glitch effects or turning the game into conventional jump-scare horror.
 
+For a practical Episode 1 drawing checklist, including reusable backgrounds, character poses, and cutscene art, see [episode-1-art-list.md](episode-1-art-list.md).
+
 ## 10. Animation and cinematic scenes
 
 Normal gameplay can use limited animation: blinking, breathing, small head or hand movements, hair movement, environmental motion, and restrained camera movement. Reserve fuller animation and more elaborate staging for major story scenes. The current scale estimate is approximately **5 to 10 major cinematic scenes**, subject to production planning.
