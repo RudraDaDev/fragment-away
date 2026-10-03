@@ -15,10 +15,15 @@
       font-display: swap;
     }
 
+
     :root {
       color-scheme: light;
-      --ink: #29382a;
-      --hand: "Dudu Calligraphy", "Segoe Print", "Bradley Hand", cursive;
+      --ink: #624432;
+      --clay: #955d3f;
+      --menu-hand: "Dudu Calligraphy", "Segoe Print", "Bradley Hand", cursive;
+      --note-hand: "Faraco Hand", "Dudu Calligraphy", cursive;
+      --ui-hand: "Helvetihand", "Trebuchet MS", sans-serif;
+      --episode-display: "Whatnot", "Dudu Calligraphy", cursive;
       --body: "Trebuchet MS", sans-serif;
     }
 
@@ -51,9 +56,59 @@
       object-position: center;
     }
 
-    .scene::before {
+    .motion-overlay {
       position: absolute;
       z-index: 1;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      pointer-events: none;
+    }
+
+    .grass-tuft {
+      transform-box: view-box;
+      transform-origin: var(--pivot);
+      animation: field-sway 6s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    @keyframes field-sway {
+      0%, 100% { transform: rotate(-2.2deg); }
+      25% { transform: rotate(3.6deg); }
+      50% { transform: rotate(1deg); }
+      75% { transform: rotate(-3.4deg); }
+    }
+
+    .hair-motion {
+      transform-box: view-box;
+      transform-origin: 1604px 380px;
+      animation: hair-sway 6s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    @keyframes hair-sway {
+      0%, 100% { transform: rotate(-1.5deg); }
+      25% { transform: rotate(3deg); }
+      50% { transform: rotate(0.5deg); }
+      75% { transform: rotate(-2.8deg); }
+    }
+
+    .blink-motion {
+      opacity: 0;
+      animation: natural-blink 6s linear infinite;
+    }
+
+    @keyframes natural-blink {
+      0%, 24%, 26%, 74%, 76%, 100% { opacity: 0; }
+      24.2%, 74.2% { opacity: 0.35; }
+      24.55%, 25.45%, 74.55%, 75.45% { opacity: 1; }
+      25.8%, 75.8% { opacity: 0; }
+    }
+
+    .scene::before {
+      position: absolute;
+      z-index: 2;
       inset: 0;
       pointer-events: none;
       content: "";
@@ -62,16 +117,18 @@
 
     .scene::after {
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       inset: 0;
       pointer-events: none;
       content: "";
       background: radial-gradient(ellipse at 50% 42%, transparent 47%, rgba(39, 40, 30, 0.14) 100%);
     }
 
+    .episode-display { font-family: var(--episode-display); }
+
     .menu-copy {
       position: relative;
-      z-index: 2;
+      z-index: 3;
       width: min(410px, 38vw);
       margin-left: clamp(28px, 7.5vw, 136px);
       padding: 0;
@@ -86,9 +143,9 @@
 
     .page-note {
       margin: 0 0 17px;
-      color: #41523c;
-      font: 400 1.8rem/1.1 var(--hand);
-      text-shadow: 0 1px 8px rgba(255, 238, 193, 0.96), 0 0 16px rgba(255, 231, 174, 0.74);
+      color: var(--clay);
+      font: 400 1.8rem/1.1 var(--note-hand);
+      text-shadow: 0 1px 8px rgba(255, 238, 211, 0.98), 0 0 16px rgba(255, 231, 194, 0.76);
     }
 
     .menu {
@@ -109,17 +166,17 @@
       border-bottom: 1px solid transparent;
       color: var(--ink);
       background: transparent;
-      font: 400 clamp(2.15rem, 3vw, 3.15rem)/1.06 var(--hand);
+      font: 400 clamp(2.15rem, 3vw, 3.15rem)/1.06 var(--menu-hand);
       text-align: left;
-      text-shadow: 0 1px 8px rgba(255, 239, 199, 0.98), 0 0 17px rgba(255, 231, 174, 0.8);
+      text-shadow: 0 1px 8px rgba(255, 239, 213, 0.99), 0 0 17px rgba(255, 231, 194, 0.84);
       cursor: pointer;
       transition: color 180ms ease, transform 240ms ease, border-color 180ms ease;
     }
 
     .menu button:hover,
     .menu button:focus-visible {
-      border-color: rgba(67, 83, 55, 0.64);
-      color: #6c4934;
+      border-color: rgba(149, 93, 63, 0.64);
+      color: #a25d3d;
       outline: none;
       transform: translateX(6px) rotate(-0.6deg);
     }
@@ -127,14 +184,14 @@
     .status {
       min-height: 1.3em;
       margin: 15px 0 0;
-      color: #41523c;
-      font: 400 1.25rem/1.2 var(--hand);
-      text-shadow: 0 1px 8px rgba(255, 239, 199, 0.98);
+      color: #80593b;
+      font: 400 1.25rem/1.2 var(--ui-hand);
+      text-shadow: 0 1px 8px rgba(255, 239, 213, 0.99);
     }
 
     @media (max-width: 760px) {
       .scene { align-items: flex-end; padding: 0 0 6vh; }
-      .background-video { object-position: 64% center; }
+      .background-video { object-position: 90% center; }
       .menu-copy { width: min(390px, calc(100vw - 36px)); margin: 0 18px; }
       .logo-space { height: 72px; }
       .page-note { margin-bottom: 8px; }
@@ -145,6 +202,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+      .motion-overlay { display: none; }
     }
   </style>
 </head>
@@ -153,6 +211,126 @@
     <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/backgrounds/main-menu-golden-field.png" aria-hidden="true">
       <source src="assets/videos/main-menu-wind-6s.mp4" type="video/mp4">
     </video>
+
+    <svg class="motion-overlay" viewBox="0 0 2048 1152" preserveAspectRatio="none" aria-hidden="true">
+      <g class="grass-tuft" style="--pivot: 22px 1152px; animation-delay: -0.3s">
+        <path d="M22 1152 C-2 1058 -22 932 -40 790" fill="none" stroke="#526640" stroke-width="5" opacity=".58" stroke-linecap="round"/>
+        <path d="M30 1152 C57 1050 39 931 70 824" fill="none" stroke="#899354" stroke-width="4" opacity=".53" stroke-linecap="round"/>
+        <path d="M43 1152 C30 1061 89 1001 115 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".52" stroke-linecap="round"/>
+        <path d="M12 1152 C-30 1085 -59 1011 -89 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".54" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 220px 1152px; animation-delay: -1.1s">
+        <path d="M220 1152 C196 1058 176 932 158 790" fill="none" stroke="#526640" stroke-width="5" opacity=".56" stroke-linecap="round"/>
+        <path d="M228 1152 C255 1050 237 931 268 824" fill="none" stroke="#899354" stroke-width="4" opacity=".55" stroke-linecap="round"/>
+        <path d="M241 1152 C228 1061 287 1001 313 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".50" stroke-linecap="round"/>
+        <path d="M210 1152 C168 1085 139 1011 109 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M238 1152 C268 1084 298 1035 336 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".48" stroke-linecap="round"/>
+        <path d="M238 957 C231 997 244 1044 238 1107" fill="none" stroke="#637747" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#f4dfaa" opacity=".82">
+          <circle cx="238" cy="944" r="7"/><circle cx="250" cy="952" r="7"/><circle cx="246" cy="966" r="7"/><circle cx="231" cy="966" r="7"/><circle cx="225" cy="953" r="7"/>
+        </g>
+        <circle cx="238" cy="957" r="4" fill="#bd8050"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 425px 1152px; animation-delay: -2.0s">
+        <path d="M425 1152 C401 1058 381 932 363 790" fill="none" stroke="#526640" stroke-width="5" opacity=".58" stroke-linecap="round"/>
+        <path d="M433 1152 C460 1050 442 931 473 824" fill="none" stroke="#899354" stroke-width="4" opacity=".50" stroke-linecap="round"/>
+        <path d="M446 1152 C433 1061 492 1001 518 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M415 1152 C373 1085 344 1011 314 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".52" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 630px 1152px; animation-delay: -2.8s">
+        <path d="M630 1152 C606 1058 586 932 568 790" fill="none" stroke="#526640" stroke-width="5" opacity=".54" stroke-linecap="round"/>
+        <path d="M638 1152 C665 1050 647 931 678 824" fill="none" stroke="#899354" stroke-width="4" opacity=".51" stroke-linecap="round"/>
+        <path d="M651 1152 C638 1061 697 1001 723 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".53" stroke-linecap="round"/>
+        <path d="M620 1152 C578 1085 549 1011 519 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M661 1152 C691 1084 721 1035 759 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".45" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 820px 1152px; animation-delay: -0.8s">
+        <path d="M820 1152 C796 1058 776 932 758 790" fill="none" stroke="#526640" stroke-width="5" opacity=".56" stroke-linecap="round"/>
+        <path d="M828 1152 C855 1050 837 931 868 824" fill="none" stroke="#899354" stroke-width="4" opacity=".53" stroke-linecap="round"/>
+        <path d="M841 1152 C828 1061 887 1001 913 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".50" stroke-linecap="round"/>
+        <path d="M810 1152 C768 1085 739 1011 709 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M838 1152 C868 1084 898 1035 936 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".48" stroke-linecap="round"/>
+        <path d="M838 957 C831 997 844 1044 838 1107" fill="none" stroke="#637747" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#f4dfaa" opacity=".82">
+          <circle cx="838" cy="944" r="7"/><circle cx="850" cy="952" r="7"/><circle cx="846" cy="966" r="7"/><circle cx="831" cy="966" r="7"/><circle cx="825" cy="953" r="7"/>
+        </g>
+        <circle cx="838" cy="957" r="4" fill="#bd8050"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 1020px 1152px; animation-delay: -1.7s">
+        <path d="M1020 1152 C996 1058 976 932 958 790" fill="none" stroke="#526640" stroke-width="5" opacity=".56" stroke-linecap="round"/>
+        <path d="M1028 1152 C1055 1050 1037 931 1068 824" fill="none" stroke="#899354" stroke-width="4" opacity=".52" stroke-linecap="round"/>
+        <path d="M1041 1152 C1028 1061 1087 1001 1113 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".55" stroke-linecap="round"/>
+        <path d="M1010 1152 C968 1085 939 1011 909 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".50" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 1220px 1152px; animation-delay: -2.5s">
+        <path d="M1220 1152 C1196 1058 1176 932 1158 790" fill="none" stroke="#526640" stroke-width="5" opacity=".56" stroke-linecap="round"/>
+        <path d="M1228 1152 C1255 1050 1237 931 1268 824" fill="none" stroke="#899354" stroke-width="4" opacity=".51" stroke-linecap="round"/>
+        <path d="M1241 1152 C1228 1061 1287 1001 1313 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".55" stroke-linecap="round"/>
+        <path d="M1210 1152 C1168 1085 1139 1011 1109 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".52" stroke-linecap="round"/>
+        <path d="M1248 1152 C1278 1084 1308 1035 1346 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".47" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 1430px 1152px; animation-delay: -0.4s">
+        <path d="M1430 1152 C1406 1058 1386 932 1368 790" fill="none" stroke="#526640" stroke-width="5" opacity=".56" stroke-linecap="round"/>
+        <path d="M1438 1152 C1465 1050 1447 931 1478 824" fill="none" stroke="#899354" stroke-width="4" opacity=".52" stroke-linecap="round"/>
+        <path d="M1451 1152 C1438 1061 1497 1001 1523 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M1420 1152 C1378 1085 1349 1011 1319 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".51" stroke-linecap="round"/>
+        <path d="M1448 1152 C1478 1084 1508 1035 1546 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".48" stroke-linecap="round"/>
+        <path d="M1448 957 C1441 997 1454 1044 1448 1107" fill="none" stroke="#637747" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#f4dfaa" opacity=".82">
+          <circle cx="1448" cy="944" r="7"/><circle cx="1460" cy="952" r="7"/><circle cx="1456" cy="966" r="7"/><circle cx="1441" cy="966" r="7"/><circle cx="1435" cy="953" r="7"/>
+        </g>
+        <circle cx="1448" cy="957" r="4" fill="#bd8050"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 1640px 1152px; animation-delay: -1.4s">
+        <path d="M1640 1152 C1616 1058 1596 932 1578 790" fill="none" stroke="#526640" stroke-width="5" opacity=".57" stroke-linecap="round"/>
+        <path d="M1648 1152 C1675 1050 1657 931 1688 824" fill="none" stroke="#899354" stroke-width="4" opacity=".53" stroke-linecap="round"/>
+        <path d="M1661 1152 C1648 1061 1707 1001 1733 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".55" stroke-linecap="round"/>
+        <path d="M1630 1152 C1588 1085 1559 1011 1529 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".52" stroke-linecap="round"/>
+        <path d="M1668 1152 C1698 1084 1728 1035 1766 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".47" stroke-linecap="round"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 1855px 1152px; animation-delay: -2.2s">
+        <path d="M1855 1152 C1831 1058 1811 932 1793 790" fill="none" stroke="#526640" stroke-width="5" opacity=".55" stroke-linecap="round"/>
+        <path d="M1863 1152 C1890 1050 1872 931 1903 824" fill="none" stroke="#899354" stroke-width="4" opacity=".52" stroke-linecap="round"/>
+        <path d="M1876 1152 C1863 1061 1922 1001 1948 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M1845 1152 C1803 1085 1774 1011 1744 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".51" stroke-linecap="round"/>
+        <path d="M1873 1152 C1903 1084 1933 1035 1971 970" fill="none" stroke="#a29358" stroke-width="3.5" opacity=".46" stroke-linecap="round"/>
+        <path d="M1873 957 C1866 997 1879 1044 1873 1107" fill="none" stroke="#637747" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#f4dfaa" opacity=".82">
+          <circle cx="1873" cy="944" r="7"/><circle cx="1885" cy="952" r="7"/><circle cx="1881" cy="966" r="7"/><circle cx="1866" cy="966" r="7"/><circle cx="1860" cy="953" r="7"/>
+        </g>
+        <circle cx="1873" cy="957" r="4" fill="#bd8050"/>
+      </g>
+
+      <g class="grass-tuft" style="--pivot: 2030px 1152px; animation-delay: -0.7s">
+        <path d="M2030 1152 C2006 1058 1986 932 1968 790" fill="none" stroke="#526640" stroke-width="5" opacity=".58" stroke-linecap="round"/>
+        <path d="M2038 1152 C2065 1050 2047 931 2078 824" fill="none" stroke="#899354" stroke-width="4" opacity=".51" stroke-linecap="round"/>
+        <path d="M2051 1152 C2038 1061 2097 1001 2123 878" fill="none" stroke="#596b42" stroke-width="4.5" opacity=".54" stroke-linecap="round"/>
+        <path d="M2020 1152 C1978 1085 1949 1011 1919 936" fill="none" stroke="#78864d" stroke-width="3.5" opacity=".53" stroke-linecap="round"/>
+      </g>
+
+      <g class="hair-motion" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1591 333 C1618 340 1642 362 1658 386" stroke="#262528" stroke-width="4" opacity=".72"/>
+        <path d="M1604 369 C1631 382 1650 402 1662 423" stroke="#262528" stroke-width="4.5" opacity=".78"/>
+        <path d="M1595 402 C1618 416 1637 434 1650 451" stroke="#29272a" stroke-width="4" opacity=".72"/>
+        <path d="M1599 340 C1624 351 1643 371 1655 387" stroke="#9a8061" stroke-width="1.6" opacity=".76"/>
+        <path d="M1611 377 C1636 391 1653 408 1660 421" stroke="#aa916f" stroke-width="1.4" opacity=".64"/>
+      </g>
+
+      <g class="blink-motion">
+        <path d="M1463 367 C1474 360 1492 362 1505 370 C1498 381 1478 383 1465 376 Z" fill="#c68b5b"/>
+        <path d="M1466 372 C1477 378 1490 379 1501 372" fill="none" stroke="#4b2b1d" stroke-width="3" stroke-linecap="round"/>
+        <path d="M1471 376 C1482 379 1491 378 1497 375" fill="none" stroke="#8c5a3a" stroke-width="1.6" stroke-linecap="round" opacity=".82"/>
+      </g>
+    </svg>
 
     <section class="menu-copy" aria-label="Main menu">
       <div class="logo-space" role="img" aria-label="Blank space reserved for the creator's logo"></div>
@@ -169,21 +347,56 @@
     </section>
   </main>
   <script>
+    const scene = document.querySelector(".scene");
     const video = document.querySelector(".background-video");
+    const motionOverlay = document.querySelector(".motion-overlay");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const mobileView = window.matchMedia("(max-width: 760px)");
     const status = document.querySelector(".status");
+
+    function syncOverlayCrop() {
+      const { width, height } = scene.getBoundingClientRect();
+      if (!width || !height) return;
+
+      const sourceWidth = 2048;
+      const sourceHeight = 1152;
+      const sceneRatio = width / height;
+      let cropWidth = sourceWidth;
+      let cropHeight = sourceHeight;
+      let cropLeft = 0;
+      let cropTop = 0;
+
+      if (sceneRatio < sourceWidth / sourceHeight) {
+        cropWidth = sourceHeight * sceneRatio;
+        const horizontalPosition = mobileView.matches ? 0.9 : 0.5;
+        cropLeft = (sourceWidth - cropWidth) * horizontalPosition;
+      } else if (sceneRatio > sourceWidth / sourceHeight) {
+        cropHeight = sourceWidth / sceneRatio;
+        cropTop = (sourceHeight - cropHeight) * 0.5;
+      }
+
+      motionOverlay.setAttribute(
+        "viewBox",
+        `${cropLeft} ${cropTop} ${cropWidth} ${cropHeight}`,
+      );
+    }
 
     function syncMotionPreference() {
       if (reducedMotion.matches) {
         video.pause();
         video.currentTime = 0;
+        motionOverlay.style.display = "none";
       } else {
+        motionOverlay.style.display = "block";
         video.play().catch(() => {});
       }
     }
 
-    reducedMotion.addEventListener?.("change", syncMotionPreference);
+    syncOverlayCrop();
     syncMotionPreference();
+    window.addEventListener("resize", syncOverlayCrop, { passive: true });
+    reducedMotion.addEventListener?.("change", syncMotionPreference);
+    mobileView.addEventListener?.("change", syncOverlayCrop);
 
     document.querySelectorAll(".menu button").forEach((button) => {
       button.addEventListener("click", () => {

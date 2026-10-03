@@ -1,9 +1,10 @@
-# Font notice
+# Game font palette and licensing notes
 
-The main menu preview uses **Dudu Calligraphy** by Adderou.
+The requested type family names are preserved exactly. The preview uses Dudu Calligraphy for its visible handwritten menu, and its CSS roles are ready for the other requested families. No font binaries are bundled here.
 
-- DaFont listing: https://www.dafont.com/dudu-calligraphy.font
-- Font file used by the preview: https://www.fontrepo.com/font/34835/dudu-calligraphy.ttf
-- FontRepo identifies the font as Creative Commons Attribution 4.0 and requests author attribution.
+- **Whatnot**: intended for episode or chapter display lettering. This name has multiple versions. MyFonts lists a separate *Whatnot 22* by Hanoded with App and Webfonts license categories. The exact edition intended for this game is not confirmed, so it is not loaded or bundled. Confirm the source and game-embedding license before use.
+- **Dudu Calligraphy**, by Adderou: used for the main menu. [DaFont listing](https://www.dafont.com/dudu-calligraphy.font). The preview loads the TTF from [FontRepo](https://www.fontrepo.com/font/34835/dudu-calligraphy.ttf), which identifies it as Creative Commons Attribution 4.0 and requests author attribution. Credit Adderou. For production, keep the attribution and review the original archive before bundling a local copy.
+- **Helvetihand** (spelled *HelvetiHand* on its listing), by Billy Snyder: intended for functional UI copy. [DaFont listing](https://www.dafont.com/helvetihand.font). The author says the font may be used for anything and that credit is appreciated but not required. The preview references the requested family name and uses a system fallback unless the font is installed locally. Obtain the original archive from the author or DaFont for an offline build, and retain this credit note.
+- **Faraco Hand**, by João Faraco: intended for personal notes and selected narrative lettering. [DaFont listing](https://www.dafont.com/faraco-hand.font) marks it 100% Free. DaFont's [license FAQ](https://www.dafont.com/faq.php#copyright) says the archive readme or author's site is authoritative. That archive has not been reviewed, so the preview references the family name with a fallback, and the font is not bundled. Verify the archive terms before shipping it in a game.
 
-The preview loads the font from that remote TTF URL. The font file is not bundled in this repository. For a production release, obtain a local copy from the author or DaFont, keep the attribution, and confirm the license terms for the intended distribution.
+If a typeface fails to load or the preview has no network access, it falls back to installed or system fonts. Replace the family fallbacks with locally bundled, license-cleared files before a production release. For Whatnot, ask the creator to confirm the intended edition and provide its game-use license or licensed file.
