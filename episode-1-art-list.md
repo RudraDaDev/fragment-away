@@ -2,6 +2,8 @@
 
 > A beginner-friendly drawing plan for the free episode. The list follows the proposed hand-drawn 2D side-view style. It is a guide, not a requirement to finish all art before making a prototype. Ready-to-copy prompts for each location, character, and cutscene are in [episode-1-drawing-prompts.md](episode-1-drawing-prompts.md).
 
+**First generated visual reference:** [Morrow bedroom, morning](assets/backgrounds/morrow-bedroom-day.png). Use it as a prototype/reference, not a locked final art direction.
+
 ## Recommended drawing style
 
 Use **soft, hand-painted graphic-novel illustration**. Think of a quiet contemporary indie film translated into simple 2D drawings. Keep the people and locations recognizable, but do not chase realism or tiny detail.
