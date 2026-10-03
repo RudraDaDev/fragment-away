@@ -117,7 +117,9 @@ Approximately 70% narrative and 30% gameplay. The exact split may change during 
 - Use Mara's phone to follow conversations and discover information.
 - Experience branching scenes and consequences.
 
-The movement perspective, controls, puzzle systems, and exact interaction model are not decided yet. Keep exploration in service of character and discovery; do not add mechanics that distract from the psychological drama.
+**Recommended gameplay style, awaiting approval:** a hand-drawn 2D side-on walk-and-interact adventure with a mostly fixed camera in rooms and short scrolling views for streets or hallways. Mara walks through compact spaces, examines hotspots, talks to people, makes choices, and opens her phone. No 3D, jumping, combat, or platforming is needed. Use still illustrated backgrounds with a few animated layers, plus simple idle, walk, and interact animations for characters. Build cutscenes from framed illustrations, pans, close-ups, and limited key animation.
+
+This is a production-friendly proposal, not locked canon. Exact controls and the final movement layout still need approval. Keep exploration in service of character and discovery; do not add mechanics that distract from the psychological drama.
 
 ## 7. Phone and UI storytelling
 

@@ -47,7 +47,7 @@
 - **PHONE:** An on-screen phone interaction or notification.
 - **VISUAL / SOUND:** Direction for framing, animation, ambience, and music.
 
-**Implementation note:** The game will be built in Phaser. Keep world movement, cameras, and environmental interactions in Phaser. Phone or dialogue panels can use HTML and CSS overlays if that is useful for responsive layout or readable text. The UI architecture is still open.
+**Implementation note:** The game will be built in Phaser. The current proposal is a side-on walk-and-interact view with a mostly fixed camera indoors and short scrolling streets. This is not approved or locked yet. Keep world movement, cameras, and environmental interactions in Phaser. Phone or dialogue panels can use HTML and CSS overlays if that is useful for responsive layout or readable text. The UI architecture is still open.
 
 ## Episode 1 cutscenes
 
