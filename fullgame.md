@@ -55,6 +55,8 @@ Mara is not secretly a flawless person who only needs to “break free.” She c
 
 Her difficulty is that she has been expected to behave perfectly for so long that she has suppressed parts of herself and cannot easily tell which decisions are her own.
 
+**Current visual reference, based on the creator's concept art:** Mara has warm tan skin, a short dark bob, a red jacket, lavender shirt, teal-blue trousers, and red high-top sneakers. Give her simple, natural, readable eyes, brows, nose, and mouth. The generated first-pass pose references are in `assets/characters/episode-1/`; use them for continuity without treating them as finished production sprites.
+
 **Character arc:**
 
 1. “Everyone tells me who I am.”

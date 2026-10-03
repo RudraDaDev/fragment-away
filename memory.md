@@ -24,6 +24,7 @@
 ## Canonical story facts
 
 - **Mara Bennett** is a young adult college student raised under a “perfect kid” identity: smart, responsible, polite, successful, well-behaved, and never disappointing. She leaves, but physical distance does not give her an identity automatically.
+- Mara's current visual reference comes from the creator's concept art: short dark bob, warm tan skin, red jacket, lavender shirt, teal-blue trousers, and red high-top sneakers. Her faces should include simple, natural, readable eyes, brows, nose, and mouth.
 - The story begins in **Morrow**, a fictional, contemporary college town and Mara's hometown. Its name suggests the uncertain tomorrow ahead. The town is named; region, landmarks, and Episode 2 destination are still open.
 - Mara is human and contradictory: uncertain, angry, impulsive, awkward, funny, emotional, sometimes selfish, sometimes kind. Her problem is lack of room to discover herself, not a hidden flaw to expose.
 - **David Bennett**, her father, is achievement-focused and believes pressure prepares Mara for adulthood. **Claire Bennett**, her mother, cares about Mara while worrying about stability, reputation, and doing the “right” thing. Their love can coexist with harmful expectations; do not make them cartoonishly abusive by default.
@@ -37,8 +38,8 @@
 - **Framework:** Phaser is chosen for the game. HTML and CSS DOM overlays are optional for phone, dialogue, or settings UI when they improve readability or accessibility. Version, JavaScript or TypeScript, build tooling, and the exact division between Phaser UI and DOM overlays remain undecided.
 - **Gameplay visual style proposal:** hand-drawn 2D side-on walk-and-interact, mostly fixed camera indoors and short scrolling streets, with no 3D, combat, jumping, or platforming. This is a recommendation for the beginner-friendly prototype, not yet user-approved.
 - **Drawing style proposal:** soft hand-painted graphic-novel illustration with simplified natural proportions, clear shapes, selective pencil linework, muted colors, and light brush texture. Awaiting user approval.
-- `episode-1-art-list.md` is the Episode 1 drawing checklist. `episode-1-drawing-prompts.md` contains detailed prompts for each background, character, prop, and cutscene image. The plan recommends seven reusable backgrounds and three cutscene illustrations. Draw the bedroom first and test it with placeholders before polishing.
-- The first generated background reference is `assets/backgrounds/morrow-bedroom-day.png`. Treat it as a visual prototype, not a final approved art direction.
+- `episode-1-art-list.md` is the Episode 1 drawing checklist and links to generated concept art. `episode-1-drawing-prompts.md` contains detailed prompts for backgrounds, characters, props, and cutscene images. Eight first-pass background references and ten character concept images are now in `assets/backgrounds/` and `assets/characters/episode-1/`. The seven-location plan and cutscene keyframes remain the production guide; generated images are references, not finished game-ready art.
+- Mara's supplied concept is now the visual continuity reference in the art list and drawing prompts. Rough transparent prototype cutouts of Mara's idle, walk, and recording poses, plus the supporting cast, are in `assets/characters/episode-1/sprites/`. Original full-image concepts remain in the parent folder. The cutout edges and shadows need review before production use; the first-pass designs for supporting characters remain open for revision.
 - Target balance is approximately 70% narrative / 30% gameplay. It should include a small explorable 2D world, dialogue and choices, relationships, object interaction, investigation, revisiting locations, and consequences, not be a pure visual novel.
 - Mara's phone supports messages, voice notes, contacts, photos, conversations, notifications, and possibly browser/social-style information. Voice notes are especially important.
 - Visual direction: illustrated/hand-drawn 2D, stylized realistic proportions, muted and atmospheric, cinematic but not hyper-realistic, pixel-art-dependent, anime, or over-detailed.
@@ -65,8 +66,9 @@
 
 ## Next useful steps
 
-1. Review the Episode 1 draft together: adjust the dialogue voice and approve/change Mara's hobby, Morrow's atmosphere, and the classmate placeholder.
-2. Name the best friend and define their personality and friendship with Mara beyond the later disappearance.
-3. Build Episode 4's fair clue trail and decide how the kidnapping is uncovered without a single missable clue.
-4. Decide what player-choice patterns meaningfully shape Mara, then design ending conditions without a simple morality meter.
-5. Confirm the side-on gameplay proposal, choose Phaser version and JavaScript or TypeScript, then graybox Mara's bedroom using `episode-1-art-list.md` and prototype movement, hotspots, dialogue, and a phone overlay.
+1. Review the generated backgrounds, character concepts, and transparent prototype cutouts in the art list. Identify any corrections, then continue with optional cutscene keyframes or lighting variants in a later image-generation batch.
+2. Review the Episode 1 draft together: adjust the dialogue voice and approve/change Mara's hobby, Morrow's atmosphere, and the classmate placeholder.
+3. Name the best friend and define their personality and friendship with Mara beyond the later disappearance.
+4. Build Episode 4's fair clue trail and decide how the kidnapping is uncovered without a single missable clue.
+5. Decide what player-choice patterns meaningfully shape Mara, then design ending conditions without a simple morality meter.
+6. Confirm the side-on gameplay proposal, choose Phaser version and JavaScript or TypeScript, then graybox Mara's bedroom using `episode-1-art-list.md` and prototype movement, hotspots, dialogue, and a phone overlay.

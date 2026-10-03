@@ -10,7 +10,7 @@ Copy this style block before each environment or cutscene prompt:
 
 For **backgrounds**, add: “No people or characters. Keep the lower walking area clear. Leave important objects away from the extreme edges.”
 
-For **character art**, add: “One character only, full body, side view, transparent background, no extra views, no text.” Choose each character's face, hair, and skin tone once, then reuse that exact design as a reference for every pose.
+For **character art**, add: “One character only, full body, side view, transparent background if possible, no extra views, no text.” Mara's supplied concept sets her look: warm tan skin, straight dark chin-length bob, long red jacket, plain lavender shirt, teal-blue trousers, and red high-top sneakers. Add simple, readable eyes, brows, nose, and mouth. Reuse the same design for every Mara pose. Other cast appearances remain open.
 
 For **UI**, add: “Do not paint readable words. Leave message text and buttons blank so they can be real Phaser or HTML/CSS text.”
 
@@ -68,11 +68,11 @@ Use the same street reference and composition. Set it at night with a few lit wi
 
 ## 3. Character prompts
 
-The story has not locked skin tones, hair, or ethnicity. Choose those for each character yourself, then keep the design consistent. These prompts define posture, clothing direction, and mood without assigning an unapproved background.
+Mara's appearance now follows the concept art supplied by the creator. Her face can stay simply drawn, but it needs a few readable features for dialogue scenes. Hair, skin tone, and clothing details for the other characters are still open. Use their generated concept images as temporary references, not fixed canon.
 
 ### Mara, base sprite
 
-> One full-body side-view character design of Mara Bennett, a young adult college student with natural proportions and an ordinary, approachable appearance. Simple everyday outfit: a plain sweater or cardigan, a shirt, straight-leg trousers or jeans, and practical shoes. Muted colors that fit Morrow. Her posture is neat and slightly held in, shoulders subtly tense, phone held close. Her expression is polite and observant, with tiredness visible only in small details. Avoid a model pose, exaggerated sadness, or a rebellious costume. Transparent background, one person, no text, no extra poses.
+> One full-body side-view character design of Mara Bennett, a young adult college student, based on the creator's supplied concept art. Keep her warm tan skin, straight dark chin-length bob, long red jacket, plain lavender T-shirt with no lettering, teal-blue trousers, and red high-top sneakers. Add simple natural facial features: expressive dark eyes, small brows, nose, and a restrained mouth. Use natural proportions, readable shapes, and the same watercolor-paper texture and dark hand-drawn outlines as the concept. Her early-game posture is neat and slightly held in, shoulders subtly tense, phone held close. Avoid a model pose, exaggerated sadness, or a rebellious costume. One character only, full body, transparent background if possible, no text, no extra poses.
 
 ### Mara, expression and action poses
 

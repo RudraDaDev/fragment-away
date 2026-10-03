@@ -2,7 +2,13 @@
 
 > A beginner-friendly drawing plan for the free episode. The list follows the proposed hand-drawn 2D side-view style. It is a guide, not a requirement to finish all art before making a prototype. Ready-to-copy prompts for each location, character, and cutscene are in [episode-1-drawing-prompts.md](episode-1-drawing-prompts.md).
 
-**First generated visual reference:** [Morrow bedroom, morning](assets/backgrounds/morrow-bedroom-day.png). Use it as a prototype/reference, not a locked final art direction.
+**Generated background references:** [Morrow bedroom, morning](assets/backgrounds/morrow-bedroom-day.png), [bedroom, night](assets/backgrounds/morrow-bedroom-night.png), [family kitchen](assets/backgrounds/morrow-kitchen-morning.png), [Bennett home hallway](assets/backgrounds/bennett-hallway.png), [Morrow street](assets/backgrounds/morrow-street-morning.png), [college hallway](assets/backgrounds/morrow-college-hallway.png), [seminar room](assets/backgrounds/morrow-seminar-room.png), and [college common room](assets/backgrounds/morrow-common-room.png). These are first-pass references, not locked final art direction.
+
+**Mara's current visual reference:** [Mara, idle with phone](assets/characters/episode-1/mara-idle.png). The supplied concept's short dark bob, warm tan skin, red jacket, lavender shirt, teal-blue trousers, and red high-tops are the continuity guide. The generated image adds simple readable facial features.
+
+**Generated character concepts:** Mara's [walk](assets/characters/episode-1/mara-walk.png), [recording](assets/characters/episode-1/mara-recording.png), [bedroom phone](assets/characters/episode-1/mara-bedroom-phone.png), and [leaving](assets/characters/episode-1/mara-leaving.png) poses; plus first-pass designs for [Claire](assets/characters/episode-1/claire.png), [David](assets/characters/episode-1/david.png), [Jules](assets/characters/episode-1/jules.png), [the Professor](assets/characters/episode-1/professor.png), and [the aunt](assets/characters/episode-1/aunt.png). These supporting-character appearances are references only, not locked designs.
+
+**Transparent prototype cutouts:** Cleaned sprite placeholders are in `assets/characters/episode-1/sprites/`: [Mara idle](assets/characters/episode-1/sprites/mara-idle.png), [walk](assets/characters/episode-1/sprites/mara-walk.png), [recording](assets/characters/episode-1/sprites/mara-recording.png), and one cutout each for [Claire](assets/characters/episode-1/sprites/claire.png), [David](assets/characters/episode-1/sprites/david.png), [Jules](assets/characters/episode-1/sprites/jules.png), [the Professor](assets/characters/episode-1/sprites/professor.png), and [the aunt](assets/characters/episode-1/sprites/aunt.png). The original concept images remain beside the `sprites` folder. These rough background removals are suitable for grayboxing; inspect edges and foot shadows before production use.
 
 ## Recommended drawing style
 
