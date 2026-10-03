@@ -162,7 +162,7 @@ Use inspectable objects, repeated locations, altered details, and visual contrad
 
 Fragmentation should be intentional and legible. Avoid relying on generic glitch effects or turning the game into conventional jump-scare horror.
 
-For a practical Episode 1 drawing checklist, including reusable backgrounds, character poses, and cutscene art, see [episode-1-art-list.md](episode-1-art-list.md).
+For the Episode 1 drawing checklist and ready-to-use prompts for backgrounds, characters, props, and cutscenes, see [episode-1-art-list.md](episode-1-art-list.md) and [episode-1-drawing-prompts.md](episode-1-drawing-prompts.md).
 
 ## 10. Animation and cinematic scenes
 
