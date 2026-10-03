@@ -14,7 +14,7 @@
 
 Its storytelling combines:
 
-- A small, explorable 2D world—not a pure visual novel.
+- A small, explorable 2D world, not a pure visual novel.
 - Dialogue, branching choices, relationships, and consequences.
 - A phone interface that carries messages, voice notes, photos, and discoveries.
 - Environmental details that reward careful observation.
@@ -31,23 +31,25 @@ The game asks:
 
 > **Who are you when everyone else has already decided who you're supposed to be?**
 
-Mara initially believes that leaving home will let her become herself. Distance gives her room, but it does not automatically give her an identity. She must work out what she actually wants, believes, enjoys, dislikes, and chooses—including whether a choice is genuinely hers or something she learned to do to please somebody else.
+Mara initially believes that leaving home will let her become herself. Distance gives her room, but it does not automatically give her an identity. She must work out what she actually wants, believes, enjoys, dislikes, and chooses, including whether a choice is genuinely hers or something she learned to do to please somebody else.
 
 There is no single “correct” version of Mara. The point is her freedom to define herself, not her arrival at a prescribed personality or a simple happy ending.
 
 ## 3. Story premise
 
+The opening takes place in **Morrow**, a fictional college town and Mara's hometown. The name hints at the uncertain tomorrow she is stepping toward when she leaves. Keep Morrow contemporary, familiar, and lived-in rather than gothic or fantastical. Its region, specific landmarks, and Episode 2 destination remain undecided.
+
 Mara Bennett is a young adult college student who has spent most of her life being treated as the **perfect kid**. Her parents, teachers, relatives, and other people around her reinforce the same picture of who she should be: smart, responsible, polite, successful, well-behaved, and never disappointing.
 
 Mara has had too little room to discover who she is outside that performance. Eventually, she feels suffocated and leaves. She expects physical distance to bring freedom, but instead finds herself isolated from almost everyone she knew. She is away from the people who defined her, yet does not know what to put in their place.
 
-While trying to navigate this new life, Mara meets Ethan Mercer, a world-famous indie/alternative rock musician. His public image and apparent emotional intelligence make it believable that he might understand her. His attention is compelling, and some of it may be genuine—but it is also unhealthy. Ethan becomes increasingly manipulative and begins influencing how Mara sees herself and the people around her.
+While trying to navigate this new life, Mara meets Ethan Mercer, a world-famous indie/alternative rock musician. His public image and apparent emotional intelligence make it believable that he might understand her. His attention is compelling, and some of it may be genuine, but it is also unhealthy. Ethan becomes increasingly manipulative and begins influencing how Mara sees herself and the people around her.
 
 The player should not know from the beginning that Ethan is dangerous. The story earns the later realization through accumulating details, not an obvious villain reveal.
 
 ## 4. Main characters
 
-### Mara Bennett — protagonist
+### Mara Bennett: protagonist
 
 Mara is not secretly a flawless person who only needs to “break free.” She can be uncertain, angry, impulsive, awkward, funny, emotional, contradictory, selfish sometimes, and kind sometimes. Those are ordinary parts of a person; none is the one hidden, “true” Mara.
 
@@ -62,23 +64,23 @@ Her difficulty is that she has been expected to behave perfectly for so long tha
 5. “Wait... is he defining me too?”
 6. “I need to make choices for myself.”
 
-### Ethan Mercer — musician and manipulator
+### Ethan Mercer: musician and manipulator
 
-Ethan is famous, talented, thoughtful-seeming, artistic, empathetic in public, and beloved by his fans. Privately, he is emotionally disconnected. He does not need to act like an obvious villain at first; his appeal should be convincing enough that Mara—and the player—can believe he understands her.
+Ethan is famous, talented, thoughtful-seeming, artistic, empathetic in public, and beloved by his fans. Privately, he is emotionally disconnected. He does not need to act like an obvious villain at first; his appeal should be convincing enough that Mara and the player can believe he understands her.
 
 Ethan is unusually fascinated by Mara's voice, especially in her voice notes: its cadence, pauses, rhythm, emotional texture, and sound. Mara can interpret this as someone finally listening to her. Ethan may also be listening to her as something musically interesting. The tension between those meanings is central to their dynamic. His interest can be genuine and still be unhealthy.
 
-Over time, Ethan subtly undermines Mara's other relationships and influences her sense of herself. His control should emerge through plausible explanations, selective attention, and small boundary crossings—not a sudden transformation into a caricature.
+Over time, Ethan subtly undermines Mara's other relationships and influences her sense of herself. His control should emerge through plausible explanations, selective attention, and small boundary crossings, not a sudden transformation into a caricature.
 
-### David Bennett — Mara's father
+### David Bennett: Mara's father
 
 Achievement-focused. David believes pressure prepares Mara for adulthood. His underlying logic is: “I'm pushing you because I know you're capable of more.” He may love Mara; she experiences the pressure as yet another person deciding what her life should be.
 
-### Claire Bennett — Mara's mother
+### Claire Bennett: Mara's mother
 
 Claire cares about Mara, but is especially concerned with emotional stability, reputation, and the family's image. She worries about whether Mara is doing the “right” thing. Her care and her harmful expectations can coexist.
 
-### Mara's best friend — name and details TBD
+### Mara's best friend: name and details TBD
 
 Mara meets this friend after leaving. The friendship gives her an early, important experience of being allowed to be weird, uncertain, angry, funny, imperfect, and spontaneous without maintaining the perfect-kid persona. It is one of the first relationships in which she can feel like herself.
 
@@ -151,13 +153,13 @@ Use inspectable objects, repeated locations, altered details, and visual contrad
 - **Early game:** Controlled, clean, organized compositions; neat environments and restrained visuals reflect Mara's constrained life.
 - **After leaving:** More varied environments, color, and less controlled compositions suggest possibilities as well as instability.
 - **Ethan's world:** Beautiful, polished, and almost too perfect, reflecting his carefully maintained public image.
-- **Later game:** Subtle fragmentation—repeated or altered objects, fragmented photographs, unusual transitions, inconsistent memories, familiar places that feel slightly different, mismatched reflections, and small changes to the UI.
+- **Later game:** Subtle fragmentation, including repeated or altered objects, fragmented photographs, unusual transitions, inconsistent memories, familiar places that feel slightly different, mismatched reflections, and small changes to the UI.
 
 Fragmentation should be intentional and legible. Avoid relying on generic glitch effects or turning the game into conventional jump-scare horror.
 
 ## 10. Animation and cinematic scenes
 
-Normal gameplay can use limited animation: blinking, breathing, small head or hand movements, hair movement, environmental motion, and restrained camera movement. Reserve fuller animation and more elaborate staging for major story scenes. The current scale estimate is approximately **5–10 major cinematic scenes**, subject to production planning.
+Normal gameplay can use limited animation: blinking, breathing, small head or hand movements, hair movement, environmental motion, and restrained camera movement. Reserve fuller animation and more elaborate staging for major story scenes. The current scale estimate is approximately **5 to 10 major cinematic scenes**, subject to production planning.
 
 The creator/developer can focus on writing, coding, direction, storyboarding, environments, UI, and integration, with a dedicated animator potentially handling important cinematic scenes.
 
@@ -173,21 +175,25 @@ The music begins quietly and grows as the conversation develops. Tension, camera
 
 ### Potential musical themes
 
-- **“Leaving”** — hopeful but uncertain.
-- **“Distance”** — sparse and isolated.
-- **“Someone You Trust”** — initially warm, gradually uncomfortable.
-- **“Fragments”** — a distorted or rearranged version of an earlier theme.
-- **“Away”** — final / end-game theme.
+- **“Leaving”:** hopeful but uncertain.
+- **“Distance”:** sparse and isolated.
+- **“Someone You Trust”:** initially warm, gradually uncomfortable.
+- **“Fragments”:** a distorted or rearranged version of an earlier theme.
+- **“Away”:** final or end-game theme.
 
 A recurring simple melody can bind the score together: warm and complete early on; sparser or missing notes in the middle; distorted or fragmented later; then presented with a new harmony or emotional interpretation near the end. These are direction and working titles, not finalized track names.
 
+### Episode 1 OST direction
+
+Start with room tone and a few felt-piano notes. Gradually weave in muted guitar harmonics and recognizable sounds Mara records around Morrow. The score can briefly warm during her moment with Jules, then return to shorter, more controlled phrases at dinner. Let notifications create tension through rhythm, not distortion or horror stingers. For the departure, strip the motif back, blend in Mara's recordings, hold an unresolved note under her voiceover, then cut to silence before the title card. All episode music should be original or properly licensed. The scene-by-scene cue plan is in [episode-1-perfect.md](episode-1-perfect.md).
+
 ## 12. Proposed episodic story structure
 
-The five-episode outline below follows the creator's proposal. **Episode 1 is intended to be free**, so it needs to work as a satisfying introduction to Mara and her central conflict while ending on a deliberate cliffhanger that makes the player want to follow her into the rest of the game. The cliffhanger is her departure and the question of what comes next—not an early reveal of Ethan's role.
+The five-episode outline below follows the creator's proposal. **Episode 1 is intended to be free and should run for at least 30 minutes on a normal first playthrough.** Its current script targets 32 to 36 minutes, to be verified through playtesting. It should work as a satisfying introduction to Mara and her central conflict while ending on a deliberate cliffhanger that makes the player want to follow her into the rest of the game. The cliffhanger is her departure and the question of what comes next, not an early reveal of Ethan's role.
 
 Each episode should have a distinct emotional progression and a strong final beat. Choices can shape Mara's responses and later relationships without turning small interactions into a morality test.
 
-### Episode 1 — PERFECT
+### Episode 1: PERFECT
 
 **Primary purpose:** Make the player care about Mara before the main plot begins.
 
@@ -195,7 +201,7 @@ Each episode should have a distinct emotional progression and a strong final bea
 
 - Open on an ordinary morning. Let the player control Mara through small decisions: what to listen to, wear, take, reply, and how to behave around her parents. At first, nothing is overtly terrible.
 - Accumulate harmless-seeming expectations: reminders about an exam, an assignment, a relative visiting, how she is dressed, and praise coupled with another demand. Each moment can feel reasonable on its own; together, they become exhausting.
-- Give Mara one simple private interest that she genuinely enjoys. It need not be impressive or productive. A parent or other person discovers it and dismisses it as a waste of time; Mara quietly closes it and puts it away. The exact interest—writing, drawing, audio, photography, music, collecting, exploring, or something else—is still to be chosen.
+- Give Mara one simple private interest that she genuinely enjoys. It need not be impressive or productive. A parent or other person discovers it and dismisses it as a waste of time; Mara quietly closes it and puts it away. The exact interest, such as writing, drawing, audio, photography, music, collecting, or exploring, is still to be chosen.
 - Use small dialogue choices such as “I'm fine,” “I'm exhausted,” or “Can we talk later?” to show how Mara edits herself for each person. These do not need major immediate consequences; they establish her habit of adjusting to expectations.
 - Include a moment where everyone praises Mara, then she enters her room, closes the door, and her smile disappears. Let silence carry the contrast between the person everyone loves and the person Mara feels like.
 - Give Mara a small, warm interaction with a classmate or peer where she laughs and is briefly not “the perfect kid.” It should be one of the episode's most human moments, not another achievement or a dramatic rescue.
@@ -205,9 +211,11 @@ Each episode should have a distinct emotional progression and a strong final bea
 
 **Final sequence and free-episode cliffhanger:** Late at night, Mara puts down the phone, sits in silence, and opens the private interest she has hidden. She searches something like **“How do I leave?”** without explaining exactly what she means. She packs a small bag, looks at certificates, photos, school items, and other objects associated with the identity expected of her, hesitates, then leaves.
 
-Cut to black. Mara says: **“I don't know where I'm going.”** Pause. **“I just know I can't stay.”** Then show the title: **FRAGMENT AWAY — EPISODE 1: PERFECT**. End there. The player knows she has left, but not where she is going, who she will become, or what she will encounter next.
+Cut to black. Mara says: **“I don't know where I'm going.”** Pause. **“I just know I can't stay.”** Then show the title: **FRAGMENT AWAY: EPISODE 1: PERFECT**. End there. The player knows she has left, but not where she is going, who she will become, or what she will encounter next.
 
-### Episode 2 — AWAY
+**First script draft:** [episode-1-perfect.md](episode-1-perfect.md). Morrow is the chosen name for Mara's hometown; the sound-recording hobby and the classmate name in that draft are still choices for discussion.
+
+### Episode 2: AWAY
 
 **Primary purpose:** Show Mara experiencing freedom for the first time.
 
@@ -224,7 +232,7 @@ Cut to black. Mara says: **“I don't know where I'm going.”** Pause. **“I j
 
 **Ending:** After a meaningful conversation, Ethan says something that feels personal. Mara smiles; the player can think he may be good for her. Then cut to Ethan alone replaying one of her voice notes, listening carefully, his expression difficult to read. This is an ambiguous stinger, not proof of his motives.
 
-### Episode 3 — SOMEONE
+### Episode 3: SOMEONE
 
 **Primary purpose:** Make the player deeply care about Mara's best friend.
 
@@ -233,13 +241,13 @@ Cut to black. Mara says: **“I don't know where I'm going.”** Pause. **“I j
 - Begin with the friendship established enough for the two to explore, joke, argue about small things, share music, talk late, discover places, and reveal personal things. These should be some of the game's happiest scenes.
 - Show Mara becoming visibly more herself around the friend: weird, funny, impulsive, emotional, imperfect, and spontaneous. Avoid implying this is the one final “true” Mara; it is simply a side of her she was not allowed to express before.
 - Bring Ethan further into her life. At first his behavior remains plausible as concern. He asks about the friend and makes observations such as “Are you sure she really cares about you?” or “I just don't want you getting hurt again.” He does not immediately issue a blunt order to stop seeing her.
-- Keep the player's interpretation open: Ethan may be genuinely concerned, or he may be manipulating Mara. His growing interest in her voice notes—asking for more or noticing tiny vocal details—can read as attention before it feels like study.
+- Keep the player's interpretation open: Ethan may be genuinely concerned, or he may be manipulating Mara. His growing interest in her voice notes, asking for more or noticing tiny vocal details, can read as attention before it feels like study.
 - Let choices influence trust, attachment, and communication, but do not label a choice as “believe Ethan” or “betray the friend” in a simplistic way. Mara's uncertainty is part of the drama.
 - Near the end, the friend disappears: messages stop and calls do not connect. Ethan is strangely calm and suggests giving the friend space. Mara finds something belonging to the friend and realizes the situation may be serious.
 
 **Cliffhanger:** Cut to black on Mara's recognition that something is wrong. The player should fear for the friend, but should not yet have proof that Ethan is responsible.
 
-### Episode 4 — FRAGMENTS
+### Episode 4: FRAGMENTS
 
 **Primary purpose:** Turn the emotional drama into a mystery and reveal Ethan's role.
 
@@ -249,12 +257,12 @@ Cut to black. Mara says: **“I don't know where I'm going.”** Pause. **“I j
 - Use old messages, voice notes, locations, conversations, photographs, timestamps, objects, and remembered scene details. Things that initially felt unimportant should take on new meanings.
 - Build contradictions in steps: something Ethan said does not match an earlier event; a message is inconsistent; he knows something he should not; a timeline fails to add up. The player should suspect Ethan before Mara fully accepts it, creating dramatic tension.
 - Let Ethan try to isolate Mara by presenting himself as the person who can protect her and by reinforcing that others cannot be trusted. Mara begins questioning him.
-- Bring back a previously heard voice note in a new context. The player realizes Ethan may not have been merely listening to Mara—he may have been studying her.
+- Bring back a previously heard voice note in a new context. The player realizes Ethan may not have been merely listening to Mara, he may have been studying her.
 - Let investigation be playable and fair: important conclusions should be supported by more than one clue, while optional details enrich rather than gate the reveal. Avoid a giant exposition dump or implausible hacking.
 
 **Reveal and ending:** Mara discovers evidence that her best friend is alive; then the evidence makes the truth clear: **Ethan kidnapped her**. End with Mara confronting Ethan. He does not need to become a screaming villain; his disturbing calm can sharpen the contrast between “I understand you” and “I know how to control you.” Cut to black before explaining every consequence.
 
-### Episode 5 — WHO AM I?
+### Episode 5: WHO AM I?
 
 **Primary purpose:** Resolve Mara's identity arc.
 
@@ -289,7 +297,7 @@ Branching choices, relationships, and multiple possible outcomes are part of the
 5. **Ambiguity:** Mara makes a major choice, and the game does not label it good or bad; the player interprets what may come next.
 6. **Identity-shaped outcomes:** Endings reflect how the player shaped Mara, potentially including independence, trust, attachment, self-expression, confrontation, dependence, and willingness to reconnect.
 
-These directions may overlap or be revised. Avoid reducing the system to “good choices = good ending.” If hidden or explicit choice variables are used, they should represent patterns and tensions in Mara's choices—not a score for whether the player behaved morally.
+These directions may overlap or be revised. Avoid reducing the system to “good choices = good ending.” If hidden or explicit choice variables are used, they should represent patterns and tensions in Mara's choices, not a score for whether the player behaved morally.
 
 ## 14. Title and possible prequel
 
@@ -305,11 +313,11 @@ A prequel is a possibility, not a current requirement. It could explore Mara's l
 
 *Fragment Away* is a **cinematic 2D narrative drama**. It is distinct from **SmallHours**, described as a procedural narrative life-sim; do not merge their format or creative identity.
 
-Current scope is limited to the concept above. Engine, target platform, precise setting and locations, best friend's name, final chapter content, implementation approach, soundtrack production, and ending logic are not yet specified. Build those decisions around the identity theme, subtle psychological suspense, and Mara's agency.
+Current scope is limited to the concept above. Morrow is named, but its region, layout, and landmarks are undecided, as is the place Mara reaches in Episode 2. Engine, target platform, the best friend's name, final chapter details, implementation approach, soundtrack production, and ending logic are also undecided. Build those choices around the identity theme, subtle psychological suspense, and Mara's agency.
 
 ## 16. Creative pillars to protect
 
-1. Identity—not a “secret perfect self”—is Mara's central conflict.
+1. Identity, not a “secret perfect self,” is Mara's central conflict.
 2. Mara is contradictory and human, not simply perfect or rebellious.
 3. Ethan's apparent understanding should be compelling before it becomes unsettling.
 4. His fascination with Mara's voice should connect to his character and the phone-based storytelling.
