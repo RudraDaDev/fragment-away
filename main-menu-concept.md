@@ -2,7 +2,7 @@
 
 ## Creator direction
 
-- The creator has supplied the *Fragment Away* logo artwork. Use that original image unchanged. Do not generate, imitate, or typeset a replacement. The attachment is not yet available in the repository workspace, so keep the logo slot blank until the original file can be added.
+- The creator supplied the *Fragment Away* logo artwork. Use the original transparent image at `fragment-away-logo.png` unchanged. Do not generate, imitate, or typeset a replacement.
 - Use the requested game fonts: Whatnot, Dudu Calligraphy, Helvetihand, and Faraco Hand. Keep their roles and licensing notes in `assets/fonts/NOTICE.md`.
 - Make the menu feel like opening a personal journal, not a conventional game dashboard.
 - Show Mara sitting in a field of grass at golden sunset, with flowers and grass moving in a changing breeze.
@@ -15,7 +15,7 @@ The selected illustration places Mara on the right and leaves open sky and field
 
 ## Menu treatment
 
-The root-level HTML preview in `main-menu-preview.html` places the handwritten menu text directly over the field. There is no paper, card, or opaque panel behind it. The logo area remains blank only until the creator-supplied image is added to the repository. The button labels and tagline are temporary.
+The root-level HTML preview in `main-menu-preview.html` places the handwritten menu text directly over the field. There is no paper, card, or opaque panel behind the text. The preview displays the creator-supplied logo image from `fragment-away-logo.png` above the menu. The button labels and tagline are temporary.
 
 The visible menu uses **Dudu Calligraphy** by Adderou from the local file `assets/fonts/Dudu_Calligraphy.ttf`, served by the root preview. The `Faraco Hand`, `Helvetihand`, and `Whatnot` CSS family roles are preserved for notes, functional UI, and episode or chapter lettering. Font origins, attribution, and unresolved game embedding terms are recorded in `assets/fonts/NOTICE.md`.
 

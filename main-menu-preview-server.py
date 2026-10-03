@@ -7,6 +7,7 @@ ROOT = Path(__file__).resolve().parent
 FILES = {
     "/": (ROOT / "main-menu-preview.html", "text/html; charset=utf-8"),
     "/main-menu-preview.html": (ROOT / "main-menu-preview.html", "text/html; charset=utf-8"),
+    "/fragment-away-logo.png": (ROOT / "fragment-away-logo.png", "image/png"),
     "/assets/backgrounds/main-menu-golden-field.png": (
         ROOT / "assets/backgrounds/main-menu-golden-field.png",
         "image/png",

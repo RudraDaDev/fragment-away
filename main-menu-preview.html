@@ -137,8 +137,13 @@
     }
 
     .logo-space {
-      height: 132px;
       margin: 0 0 5px;
+    }
+
+    .brand-logo {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
     .page-note {
@@ -193,7 +198,7 @@
       .scene { align-items: flex-end; padding: 0 0 6vh; }
       .background-video { object-position: 90% center; }
       .menu-copy { width: min(390px, calc(100vw - 36px)); margin: 0 18px; }
-      .logo-space { height: 72px; }
+      .logo-space { height: auto; }
       .page-note { margin-bottom: 8px; }
       .menu { gap: 1px; }
       .menu button { min-height: 49px; font-size: 2.1rem; }
@@ -333,7 +338,9 @@
     </svg>
 
     <section class="menu-copy" aria-label="Main menu">
-      <div class="logo-space" role="img" aria-label="Blank space reserved for the creator's logo"></div>
+      <div class="logo-space">
+        <img class="brand-logo" src="fragment-away-logo.png" alt="Fragment Away logo">
+      </div>
       <p class="page-note">A new page</p>
       <nav aria-label="Main menu">
         <ul class="menu">
