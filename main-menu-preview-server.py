@@ -11,6 +11,10 @@ FILES = {
         ROOT / "assets/backgrounds/main-menu-golden-field.png",
         "image/png",
     ),
+    "/assets/fonts/Dudu_Calligraphy.ttf": (
+        ROOT / "assets/fonts/Dudu_Calligraphy.ttf",
+        "font/ttf",
+    ),
     "/assets/videos/main-menu-wind-6s.mp4": (
         ROOT / "assets/videos/main-menu-wind-6s.mp4",
         "video/mp4",
