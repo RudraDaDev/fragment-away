@@ -2,9 +2,22 @@
 
 > A beginner-friendly drawing plan for the free episode. The list follows the proposed hand-drawn 2D side-view style. It is a guide, not a requirement to finish all art before making a prototype.
 
-## Start with this style
+## Recommended drawing style
 
-Draw the game as a **2D illustrated stage**, not a 3D scene. Indoors, use a mostly fixed camera and one shallow floor area where Mara can walk between interactable objects. Streets can scroll a short distance from one screen to the next. The backgrounds can be still paintings. Animate only what helps the story.
+Use **soft, hand-painted graphic-novel illustration**. Think of a quiet contemporary indie film translated into simple 2D drawings. Keep the people and locations recognizable, but do not chase realism or tiny detail.
+
+- **Shapes:** Clear silhouettes and simple, readable forms. Use natural adult proportions with gently stylized faces and restrained expressions.
+- **Linework:** Selective pencil or ink lines. Avoid thick black outlines around everything.
+- **Color and texture:** Mostly flat color shapes with one broad shadow layer and a little paper or brush texture. Avoid noisy texture that makes the scenes hard to read.
+- **Detail level:** Put the most detail on faces, hands, and objects the player can inspect. Simplify items in the distance.
+- **Palette:** Morrow can use warm cream, soft gray, dusty blue, muted green, and a small amber accent. At night, reuse the same painting with a cool blue-green light overlay.
+- **Composition:** Mara's early rooms are tidy and centered. Jules's moment can feel slightly looser and warmer. Save more dramatic lighting and framing for the cutscenes.
+
+Do not make it pixel art, anime, 3D, photorealistic, or extremely detailed. Still backgrounds with a few animated layers are enough. Indoors, use a mostly fixed camera and one shallow floor area where Mara can walk between interactable objects. Streets can scroll a short distance from one screen to the next. Animate only what helps the story.
+
+**Style prompt for a first reference sketch:**
+
+> A contemporary psychological indie drama as a hand-painted 2D graphic-novel illustration. Natural adult proportions, simple readable faces, clean large shapes, selective pencil linework, muted cream, dusty blue, sage green, soft brush texture, cinematic but gentle lighting. Quiet and melancholic, not horror. No pixel art, anime, 3D, or photorealism.
 
 A practical first artboard is **16:9 at 1920 by 1080 pixels**. This is a working size, not a final platform requirement. Keep faces and important objects away from the extreme edges so the scene can still work on a smaller window.
 
@@ -14,8 +27,6 @@ For each location, make only a few layers:
 2. **Playable layer:** Floor, tables, doors, and other objects Mara walks up to.
 3. **Foreground:** One or two near-camera shapes, such as a desk edge or plant, for subtle depth.
 4. **Separate interactables:** Only draw these separately when they need a highlight, animation, or state change. Most hotspot hitboxes are invisible and do not need art.
-
-Use muted, natural colors and clear silhouettes. In Mara's old life, compositions are neat and controlled. The later scenes can feel more open through framing and color, not through expensive animation.
 
 ## Episode 1 backgrounds
 

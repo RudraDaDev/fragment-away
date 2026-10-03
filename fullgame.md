@@ -150,6 +150,7 @@ Use inspectable objects, repeated locations, altered details, and visual contrad
 - Illustrated / hand-drawn 2D.
 - Stylized, fairly realistic proportions.
 - Atmospheric environments, muted colors, cinematic framing, and subtle lighting.
+- **Recommended rendering:** soft hand-painted graphic-novel illustration, with clear shapes, selective pencil linework, simple readable faces, and a little brush texture. Treat this as a proposal until approved.
 - Not hyper-realistic, dependent on pixel art, anime-styled, or extremely detailed.
 
 ### Visual evolution with Mara
