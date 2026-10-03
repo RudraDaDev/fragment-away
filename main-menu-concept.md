@@ -15,12 +15,16 @@ The selected illustration places Mara on the right and leaves open sky and field
 
 ## Menu treatment
 
-The root-level HTML preview in `main-menu-preview.html` places the menu on a warm paper panel with faint ruled lines, an ink-like margin, and a blank logo area. The button labels are temporary. The preview uses Caveat as a handwriting-font sample with cursive fallbacks. The final font and exact menu labels remain open.
+The root-level HTML preview in `main-menu-preview.html` places the handwritten menu text directly over the field. There is no paper, card, or opaque panel behind it. The logo area remains blank for the creator's artwork. The button labels and tagline are temporary.
 
-Keep the paper translucent enough that the sunset still feels present. Use dark, readable ink, generous spacing, and restrained decoration. The journal styling should feel personal and handmade, not distressed or horror-themed.
+The menu uses **Dudu Calligraphy** by Adderou, from the [DaFont page](https://www.dafont.com/dudu-calligraphy.font). The preview requests the matching TTF from [FontRepo](https://www.fontrepo.com/font/34835/dudu-calligraphy.ttf), which lists the font as Creative Commons Attribution 4.0. The browser needs network access to load that remote font. Keep the author attribution, and bundle a local copy for a production release after confirming the license details.
+
+Use a soft text shadow for readability over the bright sunset, not a panel behind the text. The journal quality should come from the handwritten type, spacing, and gentle hand-drawn details.
 
 ## Wind and movement
 
-The background illustration already suggests a breeze, but its grass and flowers are painted into one image. For the game, keep Mara and the distant sunset still. Put selected foreground grass blades and flower stems on separate layers, add a little parallax, and animate their lean with wind that varies in direction and strength. Use slow gusts rather than a rigid loop. Do not warp the whole background or Mara to fake wind. Respect reduced-motion settings.
+The six-second background loop is [main-menu-wind-6s.mp4](assets/videos/main-menu-wind-6s.mp4). It layers swaying foreground grass and flower stems over the still concept illustration. The preview loops the clip behind the menu text and respects reduced-motion settings.
 
-The standalone preview demonstrates this with a small SVG foreground and variable CSS transitions. Run it with `python3 main-menu-preview-server.py`. The preview server exposes only the mockup and its background image. This is a visual concept, not a decision to replace Phaser or the planned optional HTML/CSS overlays.
+For the game, keep Mara and the distant sunset still. Put selected foreground grass blades and flower stems on separate layers, add a little parallax, and vary the direction and strength of slow wind gusts. Do not warp the whole background or Mara to fake wind.
+
+Run the preview with `python3 main-menu-preview-server.py`. The preview server exposes only the HTML, background image, and six-second video. This is a visual concept, not a decision to replace Phaser or the planned optional HTML/CSS overlays.

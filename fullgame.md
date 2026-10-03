@@ -141,7 +141,7 @@ Voice notes are especially important: they create a believable channel for Ethan
 
 ### Main menu, creator-directed
 
-The creator will make the *Fragment Away* logo, so leave its space blank and do not generate a substitute. Use a handwriting-style font and a journal-inspired menu over a golden-hour field illustration of Mara sitting among wind-swept grass and flowers. The current background reference is `assets/backgrounds/main-menu-golden-field.png`. Keep the image static and animate separate grass and flower layers with variable wind. See `main-menu-concept.md` and the root-level standalone preview at `main-menu-preview.html`. The preview is a visual concept only and does not lock the final Phaser or HTML/CSS architecture.
+The creator will make the *Fragment Away* logo, so leave its space blank and do not generate a substitute. Use the creator-selected Dudu Calligraphy font for the journal-inspired menu text, drawn directly over the golden-hour field with no page or panel behind it. The scene shows Mara sitting among grass and flowers. `assets/videos/main-menu-wind-6s.mp4` is a six-second loop with swaying foreground grass and flowers over the still illustration at `assets/backgrounds/main-menu-golden-field.png`. See `main-menu-concept.md` and the root-level preview at `main-menu-preview.html`. The preview is a visual concept and does not lock the final Phaser or HTML/CSS architecture.
 
 ## 8. Environmental storytelling
 
