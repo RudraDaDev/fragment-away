@@ -139,6 +139,10 @@ Voice notes are especially important: they create a believable channel for Ethan
 
 **Implementation direction:** The game will use Phaser for the 2D world and interactive scenes. Phone, message, dialogue, or settings interfaces may use HTML and CSS overlays if that improves layout, text scaling, or accessibility. Keep those overlays optional and visually consistent with the game. The exact UI architecture is not decided.
 
+### Main menu, creator-directed
+
+The creator will make the *Fragment Away* logo, so leave its space blank and do not generate a substitute. Use a handwriting-style font and a journal-inspired menu over a golden-hour field illustration of Mara sitting among wind-swept grass and flowers. The current background reference is `assets/backgrounds/main-menu-golden-field.png`. Keep the image static and animate separate grass and flower layers with variable wind. See `main-menu-concept.md` and the standalone preview at `prototypes/main-menu/index.html`. The preview is a visual concept only and does not lock the final Phaser or HTML/CSS architecture.
+
 ## 8. Environmental storytelling
 
 Locations should tell the player things that dialogue does not. Ethan's environment, for example, can first reinforce his public image through awards, guitars, albums, tour posters, newspaper articles, fan letters, photographs, and recording equipment. Smaller details can gradually sit uneasily beside that polished image.

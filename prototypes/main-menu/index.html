@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e3b872">
+  <title>Main Menu Concept Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #354438;
+      --soft-ink: #566551;
+      --paper: rgba(251, 244, 224, 0.88);
+      --rule: rgba(108, 139, 133, 0.19);
+      --margin: rgba(176, 104, 83, 0.4);
+      --hand: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+      --body: "Trebuchet MS", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { min-width: 320px; min-height: 100%; margin: 0; }
+
+    body {
+      color: var(--ink);
+      background: #d7b777;
+      font-family: var(--body);
+    }
+
+    .scene {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 100svh;
+      overflow: hidden;
+      isolation: isolate;
+      background-image:
+        linear-gradient(90deg, rgba(245, 226, 188, 0.13), transparent 56%),
+        linear-gradient(0deg, rgba(39, 48, 31, 0.12), transparent 28%),
+        url("../../assets/backgrounds/main-menu-golden-field.png");
+      background-position: center, center, center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .scene::after {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      background: radial-gradient(ellipse at 48% 44%, transparent 45%, rgba(39, 40, 30, 0.16) 100%);
+    }
+
+    .journal {
+      position: relative;
+      z-index: 2;
+      width: min(390px, 34vw);
+      min-height: 520px;
+      margin-left: clamp(28px, 6.5vw, 118px);
+      padding: 28px 30px 25px 57px;
+      overflow: hidden;
+      border: 1px solid rgba(113, 98, 66, 0.24);
+      border-radius: 8px 3px 10px 5px;
+      background-color: var(--paper);
+      background-image:
+        linear-gradient(90deg, transparent 0 34px, var(--margin) 35px 36px, transparent 37px),
+        repeating-linear-gradient(180deg, transparent 0 43px, var(--rule) 44px, transparent 45px);
+      box-shadow: 0 20px 50px rgba(44, 45, 34, 0.19), 4px 5px 0 rgba(95, 77, 47, 0.1);
+      transform: rotate(-0.55deg);
+      backdrop-filter: blur(3px);
+    }
+
+    .journal::before {
+      position: absolute;
+      inset: 0 auto 0 13px;
+      width: 11px;
+      content: "";
+      background: radial-gradient(circle at 50% 22px, rgba(90, 82, 61, 0.38) 0 3px, transparent 3.5px) 0 0 / 11px 47px repeat-y;
+      opacity: 0.66;
+    }
+
+    .journal::after {
+      position: absolute;
+      inset: 8px 8px 8px auto;
+      width: 2px;
+      content: "";
+      background: rgba(255, 255, 255, 0.44);
+    }
+
+    .logo-space {
+      height: 130px;
+      margin: 0 0 8px;
+    }
+
+    .page-note {
+      margin: 0 0 12px;
+      color: rgba(64, 78, 59, 0.7);
+      font-family: var(--hand);
+      font-size: 1.42rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    .menu {
+      display: grid;
+      gap: 5px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .menu button {
+      position: relative;
+      width: fit-content;
+      min-width: 190px;
+      padding: 2px 18px 5px 0;
+      border: 0;
+      border-bottom: 1px solid transparent;
+      color: var(--ink);
+      background: transparent;
+      font: 600 2rem/1.15 var(--hand);
+      text-align: left;
+      cursor: pointer;
+      transition: color 180ms ease, transform 240ms ease, border-color 180ms ease;
+    }
+
+    .menu button::before {
+      display: inline-block;
+      width: 0;
+      color: #a65f43;
+      content: "";
+      transition: width 180ms ease;
+    }
+
+    .menu button:hover,
+    .menu button:focus-visible {
+      border-color: rgba(166, 95, 67, 0.48);
+      color: #8c4e3b;
+      outline: none;
+      transform: translateX(5px) rotate(-0.5deg);
+    }
+
+    .menu button:hover::before,
+    .menu button:focus-visible::before {
+      width: 14px;
+      content: "·";
+    }
+
+    .page-number {
+      position: absolute;
+      right: 27px;
+      bottom: 18px;
+      color: rgba(64, 78, 59, 0.6);
+      font: 500 1.35rem/1 var(--hand);
+      transform: rotate(-4deg);
+    }
+
+    .status {
+      min-height: 1.5em;
+      margin: 17px 0 0;
+      color: var(--soft-ink);
+      font: 500 1.25rem/1.2 var(--hand);
+    }
+
+    .wind-layer {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: min(31vh, 290px);
+      overflow: visible;
+      pointer-events: none;
+      opacity: 0.42;
+    }
+
+    .tuft {
+      transform-box: fill-box;
+      transform-origin: 50% 100%;
+      transition: transform 4200ms cubic-bezier(0.32, 0.03, 0.68, 0.98);
+    }
+
+    .blade, .stem { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .blade { stroke: #354d35; stroke-width: 3.2; }
+    .blade-light { stroke: #78804b; stroke-width: 2.4; }
+    .stem { stroke: #5c7041; stroke-width: 2.1; }
+    .petal { fill: #f4df9d; stroke: #a58c4e; stroke-width: 1.1; }
+    .flower-center { fill: #bc8150; }
+
+    .preview-note {
+      position: absolute;
+      z-index: 4;
+      right: 18px;
+      bottom: 13px;
+      margin: 0;
+      color: rgba(255, 249, 227, 0.84);
+      font: 500 1rem/1.2 var(--hand);
+      text-shadow: 0 1px 5px rgba(31, 37, 28, 0.75);
+    }
+
+    @media (max-width: 760px) {
+      .scene {
+        align-items: flex-end;
+        padding: 0 0 5vh;
+        background-position: center, center, 63% center;
+      }
+
+      .journal {
+        width: min(440px, calc(100vw - 32px));
+        min-height: 0;
+        margin: 0 16px;
+        padding: 18px 24px 35px 48px;
+      }
+
+      .logo-space { height: 65px; }
+      .page-note { margin-bottom: 4px; }
+      .menu { gap: 0; }
+      .menu button { min-height: 47px; font-size: 1.8rem; }
+      .wind-layer { height: 22vh; }
+      .preview-note { right: 12px; bottom: 7px; font-size: 0.95rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+      .tuft { transform: rotate(0deg) !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="scene" aria-label="Fragment Away main menu concept">
+    <section class="journal" aria-label="Main menu, journal-style concept">
+      <div class="logo-space" role="img" aria-label="Blank space reserved for the creator's logo"></div>
+      <p class="page-note">A new page</p>
+      <nav aria-label="Main menu">
+        <ul class="menu">
+          <li><button type="button">Continue</button></li>
+          <li><button type="button">New Game</button></li>
+          <li><button type="button">Settings</button></li>
+          <li><button type="button">Credits</button></li>
+        </ul>
+      </nav>
+      <p class="status" aria-live="polite"></p>
+      <span class="page-number" aria-hidden="true">01</span>
+    </section>
+
+    <svg class="wind-layer" viewBox="0 0 1600 290" preserveAspectRatio="none" aria-hidden="true">
+      <g class="tuft">
+        <path class="blade" d="M28 292 C42 230 20 151 3 102 M45 292 C40 225 62 161 89 108 M59 292 C82 225 94 191 101 139 M70 292 C54 239 44 199 45 157"/>
+        <path class="blade-light" d="M40 292 C18 247 21 214 10 184 M79 292 C109 237 121 202 128 174"/>
+      </g>
+      <g transform="translate(176 0)">
+        <g class="tuft">
+        <path class="blade-light" d="M16 292 C25 235 4 180 2 122 M33 292 C27 231 41 167 69 104 M50 292 C68 229 83 197 95 150"/>
+        <path class="blade" d="M42 292 C35 242 69 215 88 183 M59 292 C41 235 34 196 37 164"/>
+      </g>
+      </g>
+      <g transform="translate(455 0)">
+        <g class="tuft">
+        <path class="blade" d="M18 292 C27 234 5 172 0 121 M36 292 C31 232 59 171 79 105 M54 292 C67 232 91 193 104 147"/>
+        <path class="blade-light" d="M46 292 C22 250 20 211 21 174 M72 292 C102 240 121 219 136 184"/>
+      </g>
+      </g>
+      <g transform="translate(890 0)">
+        <g class="tuft">
+        <path class="blade-light" d="M15 292 C26 232 8 173 1 116 M32 292 C28 232 57 168 83 105 M50 292 C65 234 94 196 111 147"/>
+        <path class="blade" d="M41 292 C33 244 63 208 90 175 M62 292 C44 244 38 199 40 161"/>
+      </g>
+      </g>
+      <g transform="translate(1180 0)">
+        <g class="tuft">
+        <path class="blade" d="M15 292 C28 236 4 174 1 121 M34 292 C31 238 55 177 82 106 M54 292 C69 230 89 194 111 145"/>
+        <path class="blade-light" d="M45 292 C20 244 19 208 19 175 M72 292 C102 247 122 218 137 179"/>
+      </g>
+      </g>
+      <g transform="translate(1440 0)">
+        <g class="tuft">
+        <path class="blade-light" d="M12 292 C25 234 2 174 0 123 M30 292 C27 230 48 169 76 103 M48 292 C64 232 87 196 107 147"/>
+        <path class="blade" d="M38 292 C31 242 62 209 87 176 M58 292 C40 241 36 198 38 164"/>
+      </g>
+      </g>
+      <g transform="translate(250 0)">
+        <g class="tuft">
+        <path class="stem" d="M38 292 C46 240 43 209 40 180"/>
+        <g transform="translate(40 177)">
+          <circle class="petal" cx="0" cy="-9" r="5"/><circle class="petal" cx="8" cy="-4" r="5"/>
+          <circle class="petal" cx="6" cy="5" r="5"/><circle class="petal" cx="-5" cy="6" r="5"/>
+          <circle class="petal" cx="-9" cy="-2" r="5"/><circle class="flower-center" r="3.2"/>
+        </g>
+      </g>
+      </g>
+      <g transform="translate(1010 0)">
+        <g class="tuft">
+        <path class="stem" d="M42 292 C37 240 51 207 54 174"/>
+        <g transform="translate(55 172)">
+          <circle class="petal" cx="0" cy="-9" r="5"/><circle class="petal" cx="8" cy="-4" r="5"/>
+          <circle class="petal" cx="6" cy="5" r="5"/><circle class="petal" cx="-5" cy="6" r="5"/>
+          <circle class="petal" cx="-9" cy="-2" r="5"/><circle class="flower-center" r="3.2"/>
+        </g>
+      </g>
+      </g>
+      <g transform="translate(1320 0)">
+        <g class="tuft">
+        <path class="stem" d="M38 292 C46 240 42 210 40 184"/>
+        <g transform="translate(40 182)">
+          <circle class="petal" cx="0" cy="-9" r="5"/><circle class="petal" cx="8" cy="-4" r="5"/>
+          <circle class="petal" cx="6" cy="5" r="5"/><circle class="petal" cx="-5" cy="6" r="5"/>
+          <circle class="petal" cx="-9" cy="-2" r="5"/><circle class="flower-center" r="3.2"/>
+        </g>
+      </g>
+      </g>
+    </svg>
+
+    <p class="preview-note">Visual concept only. Menu actions are placeholders.</p>
+  </main>
+  <script>
+    const tufts = Array.from(document.querySelectorAll(".tuft"));
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const menuStatus = document.querySelector(".status");
+    let breezeTimer;
+
+    function moveWithWind() {
+      if (reducedMotion.matches) {
+        tufts.forEach((tuft) => { tuft.style.transform = "rotate(0deg)"; });
+        return;
+      }
+
+      const direction = Math.random() < 0.5 ? -1 : 1;
+      const strength = 0.8 + Math.random() * 2.1;
+      const nextGust = 2500 + Math.random() * 2800;
+
+      tufts.forEach((tuft, index) => {
+        const localStrength = 0.55 + Math.random() * 0.8;
+        const stagger = ((index % 3) - 1) * 0.28;
+        const angle = direction * strength * localStrength + stagger;
+        const duration = 2600 + Math.random() * 3200;
+        tuft.style.transitionDuration = `${duration}ms`;
+        tuft.style.transform = `rotate(${angle.toFixed(2)}deg)`;
+      });
+
+      breezeTimer = window.setTimeout(moveWithWind, nextGust);
+    }
+
+    reducedMotion.addEventListener?.("change", () => {
+      window.clearTimeout(breezeTimer);
+      moveWithWind();
+    });
+    moveWithWind();
+
+    document.querySelectorAll(".menu button").forEach((button) => {
+      button.addEventListener("click", () => {
+        menuStatus.textContent = `${button.textContent} is a placeholder in this visual preview.`;
+      });
+    });
+  </script>
+</body>
+</html>
