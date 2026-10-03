@@ -33,8 +33,11 @@ class PreviewHandler(BaseHTTPRequestHandler):
         self.send_header("X-Content-Type-Options", "nosniff")
         self.end_headers()
 
-        with file_path.open("rb") as source:
-            self.wfile.write(source.read())
+        try:
+            with file_path.open("rb") as source:
+                self.wfile.write(source.read())
+        except (BrokenPipeError, ConnectionResetError):
+            pass
 
     def log_message(self, format_string, *args):
         print(f"{self.client_address[0]} - {format_string % args}")
