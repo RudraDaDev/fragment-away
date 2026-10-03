@@ -15,6 +15,10 @@ FILES = {
         ROOT / "assets/videos/main-menu-wind-6s.mp4",
         "video/mp4",
     ),
+    "/assets/videos/golden-field-wind-8s.mp4": (
+        ROOT / "assets/videos/golden-field-wind-8s.mp4",
+        "video/mp4",
+    ),
 }
 
 

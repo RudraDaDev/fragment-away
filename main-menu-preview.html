@@ -20,6 +20,7 @@
       color-scheme: light;
       --ink: #624432;
       --clay: #955d3f;
+      --loop-duration: 8s;
       --menu-hand: "Dudu Calligraphy", "Segoe Print", "Bradley Hand", cursive;
       --note-hand: "Faraco Hand", "Dudu Calligraphy", cursive;
       --ui-hand: "Helvetihand", "Trebuchet MS", sans-serif;
@@ -69,7 +70,7 @@
     .grass-tuft {
       transform-box: view-box;
       transform-origin: var(--pivot);
-      animation: field-sway 6s ease-in-out infinite;
+      animation: field-sway var(--loop-duration) ease-in-out infinite;
       will-change: transform;
     }
 
@@ -83,7 +84,7 @@
     .hair-motion {
       transform-box: view-box;
       transform-origin: 1604px 380px;
-      animation: hair-sway 6s ease-in-out infinite;
+      animation: hair-sway var(--loop-duration) ease-in-out infinite;
       will-change: transform;
     }
 
@@ -96,7 +97,7 @@
 
     .blink-motion {
       opacity: 0;
-      animation: natural-blink 6s linear infinite;
+      animation: natural-blink var(--loop-duration) linear infinite;
     }
 
     @keyframes natural-blink {
@@ -209,7 +210,7 @@
 <body>
   <main class="scene" aria-label="Fragment Away main menu concept">
     <video class="background-video" autoplay muted loop playsinline preload="auto" poster="assets/backgrounds/main-menu-golden-field.png" aria-hidden="true">
-      <source src="assets/videos/main-menu-wind-6s.mp4" type="video/mp4">
+      <source src="assets/videos/golden-field-wind-8s.mp4" type="video/mp4">
     </video>
 
     <svg class="motion-overlay" viewBox="0 0 2048 1152" preserveAspectRatio="none" aria-hidden="true">

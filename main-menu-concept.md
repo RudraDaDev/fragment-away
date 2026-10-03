@@ -3,7 +3,7 @@
 ## Creator direction
 
 - The creator will make the *Fragment Away* logo. Leave its place blank. Do not generate, imitate, or typeset a replacement logo.
-- Use the requested game fonts: Whatnot, Dudu Calligraphy, HelvetiHand, and Faraco Hand. Keep their roles and licensing notes in `assets/fonts/NOTICE.md`.
+- Use the requested game fonts: Whatnot, Dudu Calligraphy, Helvetihand, and Faraco Hand. Keep their roles and licensing notes in `assets/fonts/NOTICE.md`.
 - Make the menu feel like opening a personal journal, not a conventional game dashboard.
 - Show Mara sitting in a field of grass at golden sunset, with flowers and grass moving in a changing breeze.
 
@@ -23,7 +23,7 @@ The text color is a slightly warmer umber and clay tone, with a soft cream shado
 
 ## Wind and movement
 
-The six-second background layer is [main-menu-wind-6s.mp4](assets/videos/main-menu-wind-6s.mp4). It already moves selected foreground grass and flower stems over the still illustration. The root preview adds a synchronized six-second inline SVG and CSS layer: more grass and flower tufts sway across the foreground, Mara's loose bob strands move gently, and she blinks twice per loop. The layer follows the video crop at different viewport sizes and is hidden when reduced motion is requested.
+The current background loop is [golden-field-wind-8s.mp4](assets/videos/golden-field-wind-8s.mp4), an eight-second clip that loops. The earlier [main-menu-wind-6s.mp4](assets/videos/main-menu-wind-6s.mp4) remains as a smaller draft. The root preview adds a synchronized eight-second inline SVG and CSS layer: more grass and flower tufts sway across the foreground, Mara's loose bob strands move gently, and she blinks twice per loop. The layer follows the video crop at different viewport sizes and is hidden when reduced motion is requested.
 
 The preview keeps the video and SVG motion separate rather than flattening them into a replacement MP4. This preserves independent layers for the game. For production, use separate hair and eyelid layers or sprite frames plus selected foreground grass and flowers, vary slow wind gusts, and keep the distant sunset still. Do not warp the whole background or Mara to fake wind.
 
