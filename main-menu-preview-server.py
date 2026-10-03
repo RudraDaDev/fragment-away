@@ -2,11 +2,10 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parent
 FILES = {
-    "/": (ROOT / "prototypes/main-menu/index.html", "text/html; charset=utf-8"),
-    "/prototypes/main-menu/": (ROOT / "prototypes/main-menu/index.html", "text/html; charset=utf-8"),
-    "/prototypes/main-menu/index.html": (ROOT / "prototypes/main-menu/index.html", "text/html; charset=utf-8"),
+    "/": (ROOT / "main-menu-preview.html", "text/html; charset=utf-8"),
+    "/main-menu-preview.html": (ROOT / "main-menu-preview.html", "text/html; charset=utf-8"),
     "/assets/backgrounds/main-menu-golden-field.png": (
         ROOT / "assets/backgrounds/main-menu-golden-field.png",
         "image/png",
@@ -45,5 +44,5 @@ class PreviewHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = ThreadingHTTPServer(("0.0.0.0", 8000), PreviewHandler)
-    print("Main menu preview listening on 0.0.0.0:8000")
+    print("Root main menu preview listening on 0.0.0.0:8000")
     server.serve_forever()

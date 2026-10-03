@@ -15,7 +15,7 @@ The selected illustration places Mara on the right and leaves open sky and field
 
 ## Menu treatment
 
-The current HTML preview in `prototypes/main-menu/index.html` places the menu on a warm paper panel with faint ruled lines, an ink-like margin, and a blank logo area. The button labels are temporary. The preview uses Caveat as a handwriting-font sample with cursive fallbacks. The final font and exact menu labels remain open.
+The root-level HTML preview in `main-menu-preview.html` places the menu on a warm paper panel with faint ruled lines, an ink-like margin, and a blank logo area. The button labels are temporary. The preview uses Caveat as a handwriting-font sample with cursive fallbacks. The final font and exact menu labels remain open.
 
 Keep the paper translucent enough that the sunset still feels present. Use dark, readable ink, generous spacing, and restrained decoration. The journal styling should feel personal and handmade, not distressed or horror-themed.
 
@@ -23,4 +23,4 @@ Keep the paper translucent enough that the sunset still feels present. Use dark,
 
 The background illustration already suggests a breeze, but its grass and flowers are painted into one image. For the game, keep Mara and the distant sunset still. Put selected foreground grass blades and flower stems on separate layers, add a little parallax, and animate their lean with wind that varies in direction and strength. Use slow gusts rather than a rigid loop. Do not warp the whole background or Mara to fake wind. Respect reduced-motion settings.
 
-The standalone preview demonstrates this with a small SVG foreground and variable CSS transitions. Run it with `python3 prototypes/main-menu/preview_server.py`. The preview server exposes only the mockup and its background image. This is a visual prototype, not a decision to replace Phaser or the planned optional HTML/CSS overlays.
+The standalone preview demonstrates this with a small SVG foreground and variable CSS transitions. Run it with `python3 main-menu-preview-server.py`. The preview server exposes only the mockup and its background image. This is a visual concept, not a decision to replace Phaser or the planned optional HTML/CSS overlays.
