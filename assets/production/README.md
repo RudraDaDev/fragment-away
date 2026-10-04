@@ -6,6 +6,10 @@ This folder contains the current polished export pass for the main-menu still an
 
 `backgrounds/` contains nine 1920 by 1080 PNGs: the golden-field still, bedroom day and night, Bennett home hallway, kitchen morning, Morrow street morning, college hallway, seminar room, and common room. They are intended as static in-game scene backgrounds or key-art candidates. They are flattened images, not layered source paintings.
 
+## Cutscene keyframes
+
+`keyframes/` contains 1920 by 1080 exports of Mara with her phone on the bed and Mara pausing at the front door. These are useful composition and staging candidates, but they are flattened scene illustrations, not transparent sprites or layered cutscenes.
+
 ## Character sprites
 
 `sprites/` contains eight 1024 by 1024 transparent PNGs. Each character is centered on a shared bottom anchor near y=1008 so a Phaser scene can use a consistent foot baseline.
@@ -18,7 +22,7 @@ This folder contains the current polished export pass for the main-menu still an
 This is a meaningful quality and export pass, not a claim that the entire game's art is approved for release. Before calling the set final:
 
 1. Give the seven carried-over sprites the same illustration polish as Mara's new idle pose, then check identity, hands, clothing, and edge mattes at actual game scale.
-2. Make isolated production sprites or cutscene keyframes for Mara's seated phone pose and her bag-at-the-door pose. Their current images remain concept references.
+2. The seated-phone and bag-at-the-door concepts are exported as flattened keyframe candidates in `keyframes/`. They still need a final art pass and, if the scenes require movement, separate character and background layers.
 3. Replace any pseudo-writing on papers, certificates, notices, and phone screens with blank painted marks or real runtime UI text.
 4. Test the backgrounds and foot anchors in the Phaser camera. Split props into layers only where an object must animate, change state, or move in front of Mara.
 5. Check that the new golden-field still is an acceptable static companion to the existing loop before using it as a poster. The eight-second video itself has not been changed.

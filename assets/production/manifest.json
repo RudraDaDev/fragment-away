@@ -3,6 +3,7 @@
   "status": "polished production candidates, pending art review",
   "workingResolution": {
     "background": [1920, 1080],
+    "keyframe": [1920, 1080],
     "spriteCanvas": [1024, 1024],
     "spriteAnchor": { "x": 512, "y": 1008 }
   },
@@ -16,6 +17,10 @@
     { "key": "college-hallway", "file": "backgrounds/college-hallway.png", "reference": "assets/backgrounds/morrow-college-hallway.png", "role": "Episode 1 campus corridor" },
     { "key": "seminar-room", "file": "backgrounds/seminar-room.png", "reference": "assets/backgrounds/morrow-seminar-room.png", "role": "Episode 1 classroom" },
     { "key": "common-room", "file": "backgrounds/common-room.png", "reference": "assets/backgrounds/morrow-common-room.png", "role": "Episode 1 student common room" }
+  ],
+  "keyframes": [
+    { "key": "mara-phone-night", "file": "keyframes/mara-phone-night.png", "reference": "assets/characters/episode-1/mara-bedroom-phone.png", "status": "1920 by 1080 flattened cutscene composition candidate" },
+    { "key": "mara-at-door", "file": "keyframes/mara-at-door.png", "reference": "assets/characters/episode-1/mara-leaving.png", "status": "1920 by 1080 flattened cutscene composition candidate" }
   ],
   "sprites": [
     { "key": "mara-idle", "file": "sprites/mara-idle.png", "reference": "assets/characters/episode-1/sprites/mara-idle.png", "status": "new refined pose, alpha matte cleaned" },
