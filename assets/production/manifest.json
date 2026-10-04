@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "polished production candidates, pending art review",
+  "workingResolution": {
+    "background": [1920, 1080],
+    "spriteCanvas": [1024, 1024],
+    "spriteAnchor": { "x": 512, "y": 1008 }
+  },
+  "backgrounds": [
+    { "key": "main-menu-golden-field", "file": "backgrounds/main-menu-golden-field.png", "reference": "assets/backgrounds/main-menu-golden-field.png", "role": "static key art or video poster candidate" },
+    { "key": "bedroom-day", "file": "backgrounds/bedroom-day.png", "reference": "assets/backgrounds/morrow-bedroom-day.png", "role": "Episode 1 bedroom, morning" },
+    { "key": "bedroom-night", "file": "backgrounds/bedroom-night.png", "reference": "assets/backgrounds/morrow-bedroom-night.png", "role": "Episode 1 bedroom, night lighting" },
+    { "key": "bennett-hallway", "file": "backgrounds/bennett-hallway.png", "reference": "assets/backgrounds/bennett-hallway.png", "role": "Episode 1 home hallway" },
+    { "key": "kitchen-morning", "file": "backgrounds/kitchen-morning.png", "reference": "assets/backgrounds/morrow-kitchen-morning.png", "role": "Episode 1 family kitchen" },
+    { "key": "morrow-street-morning", "file": "backgrounds/morrow-street-morning.png", "reference": "assets/backgrounds/morrow-street-morning.png", "role": "Episode 1 town route" },
+    { "key": "college-hallway", "file": "backgrounds/college-hallway.png", "reference": "assets/backgrounds/morrow-college-hallway.png", "role": "Episode 1 campus corridor" },
+    { "key": "seminar-room", "file": "backgrounds/seminar-room.png", "reference": "assets/backgrounds/morrow-seminar-room.png", "role": "Episode 1 classroom" },
+    { "key": "common-room", "file": "backgrounds/common-room.png", "reference": "assets/backgrounds/morrow-common-room.png", "role": "Episode 1 student common room" }
+  ],
+  "sprites": [
+    { "key": "mara-idle", "file": "sprites/mara-idle.png", "reference": "assets/characters/episode-1/sprites/mara-idle.png", "status": "new refined pose, alpha matte cleaned" },
+    { "key": "mara-walk", "file": "sprites/mara-walk.png", "reference": "assets/characters/episode-1/sprites/mara-walk.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "mara-recording", "file": "sprites/mara-recording.png", "reference": "assets/characters/episode-1/sprites/mara-recording.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "claire", "file": "sprites/claire.png", "reference": "assets/characters/episode-1/sprites/claire.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "david", "file": "sprites/david.png", "reference": "assets/characters/episode-1/sprites/david.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "jules", "file": "sprites/jules.png", "reference": "assets/characters/episode-1/sprites/jules.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "professor", "file": "sprites/professor.png", "reference": "assets/characters/episode-1/sprites/professor.png", "status": "normalized prototype, illustration polish pending" },
+    { "key": "aunt", "file": "sprites/aunt.png", "reference": "assets/characters/episode-1/sprites/aunt.png", "status": "normalized prototype, illustration polish pending" }
+  ],
+  "excludedFromThisPass": [
+    { "file": "fragment-away-logo.png", "reason": "creator-supplied original, keep unchanged" },
+    { "file": "assets/videos/golden-field-wind-8s.mp4", "reason": "creator-supplied loop, keep unchanged" }
+  ],
+  "reviewNotes": [
+    "Original concept/reference files remain preserved outside this folder.",
+    "Mara seated-with-phone and bag-at-door art are not yet production sprite exports.",
+    "Important writing must be real runtime text, not generated into background pixels."
+  ]
+}
